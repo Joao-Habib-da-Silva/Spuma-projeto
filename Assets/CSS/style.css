@@ -120,6 +120,7 @@ header a:hover::after {
 header.start i {
     display: none;
     font-size: 3rem;
+    cursor: pointer;
     margin-right: 20px;
 }
 header img {
@@ -229,6 +230,7 @@ footer {
 }
 footer a {
     background-color: #edf6f9;
+    margin-left:40px;
     margin-right: 40px;
     height: 65px;
     width: 65px;
@@ -248,7 +250,7 @@ footer a:hover {
     width: 20px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #edf6f9;
+    background-color: #8d99ae;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #02040f;
@@ -271,7 +273,31 @@ footer i {
     header.start i {
         display: none;
     }
-
+    #home-text {
+        margin-top: 0;
+    }
+    #home-text.start {
+        margin-top: 250px;
+    }
+    #home-text-buttons button {
+        width: 200px;
+        border-radius: 30px;
+    }
+    #home-text-buttons button:hover::after {
+        width: 1000px;
+        border-radius: 30px;
+    }
+    video {
+        width: 100%;
+        object-fit: cover;
+        height: 120vh;
+    }
+    #home-opacity {
+        height: 120vh;
+    }
+    footer {
+        margin-top: 150px;
+    }
 }
 @media (min-width:500px) and (max-width:1240px) {
     header.start i {
