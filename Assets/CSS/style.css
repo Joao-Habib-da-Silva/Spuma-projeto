@@ -13,6 +13,10 @@
     scroll-behavior: smooth;
 
 }
+::selection  {
+    background-color: #02040f;
+    color: #edf6f9;
+}
 button, input {
     outline: none;
 }
@@ -51,7 +55,9 @@ header nav {
     height: 100%;
     display: flex;
     align-items: center;
+    scale: 1;
     margin-left: -50px;
+    transition: 0.5s ease-in-out;
 }
 header button {
     width: 150px;
@@ -111,9 +117,15 @@ header nav a::after {
 header a:hover::after {
     transform: scaleX(1);
 }
+header.start i {
+    display: none;
+    font-size: 3rem;
+    margin-right: 20px;
+}
 header img {
     width: 300px;
     height: 100px;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
     margin-left: 20px;
 }
@@ -164,9 +176,10 @@ header img {
     font-size: 1.5rem;
     height: 100px;
     z-index: 1;
-    margin-right: 35px;
     border-radius: 50px;
     position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
     transition: 0.5s linear;
     cursor: pointer;
 }
@@ -229,9 +242,50 @@ footer a {
 footer a:hover {
     background-color: #02040f;
     color: #edf6f9;
-    scale: 1.1;
+    scale: 1.2;
 }
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: #edf6f9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #02040f;
+    border-radius: 30px;
+}
+
 footer i {
     font-size: 3rem;
+    
+}
+@media (max-width: 500px) {
+    * {
+        cursor: none;
+    }
+    header.start img {
+        margin-left: 0px;
+        width: 200px;
+        height: 66px;
+    }
+    header.start i {
+        display: none;
+    }
+
+}
+@media (min-width:500px) and (max-width:1240px) {
+    header.start i {
+        display: flex;
+    }
+
+}
+@media (max-width:1240px) {
+    header.start nav {
+        display: none;
+        margin-left: 50px;
+    }
+    header.start button {
+        display: none;
+    }
     
 }
