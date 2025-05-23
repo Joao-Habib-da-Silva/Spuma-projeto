@@ -329,6 +329,12 @@ footer i {
         display: flex;
         justify-content: center;
     }
+    header.start nav {
+        display: none;
+    }
+    header.start button {
+        display: none;
+    }
 }
 @media (max-width:350px) {
     #home-text.start{
