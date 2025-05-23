@@ -120,6 +120,7 @@ header a:hover::after {
 header.start i {
     display: none;
     font-size: 3rem;
+    cursor: pointer;
     margin-right: 20px;
 }
 header img {
@@ -229,6 +230,7 @@ footer {
 }
 footer a {
     background-color: #edf6f9;
+    margin-left:40px;
     margin-right: 40px;
     margin-left: 40px;
     height: 65px;
@@ -249,7 +251,7 @@ footer a:hover {
     width: 20px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #edf6f9;
+    background-color: #8d99ae;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #02040f;
@@ -300,6 +302,7 @@ footer i {
     header.start i {
         display: none;
     }
+<<<<<<< HEAD
     video {
         height: 110vh;
     }
@@ -322,6 +325,32 @@ footer i {
     }
     footer {
         margin-bottom: 100px;
+=======
+    #home-text {
+        margin-top: 0;
+    }
+    #home-text.start {
+        margin-top: 250px;
+    }
+    #home-text-buttons button {
+        width: 200px;
+        border-radius: 30px;
+    }
+    #home-text-buttons button:hover::after {
+        width: 1000px;
+        border-radius: 30px;
+    }
+    video {
+        width: 100%;
+        object-fit: cover;
+        height: 120vh;
+    }
+    #home-opacity {
+        height: 120vh;
+    }
+    footer {
+        margin-top: 150px;
+>>>>>>> 8286d3049c3c7a52c12daab4b0ac6dcd78d73704
     }
 }
 @media (min-width:0px) and (max-width:1240px) {
