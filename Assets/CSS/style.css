@@ -38,7 +38,7 @@ header {
     font-family: "Roboto";
     height: 15vh;
     transform: translateY(-80px);
-    transition: 0.5s linear;
+    transition: 0.8s linear;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,44 +56,8 @@ header nav {
     display: flex;
     align-items: center;
     scale: 1;
-    margin-left: -50px;
-    transition: 0.5s ease-in-out;
-}
-header button {
-    width: 150px;
-    font-size: 1.25rem;
-    border-radius: 10px;
-    border: 3px solid #edf6f9;
-    cursor: pointer;
-    font-family: "Roboto";
-    color: #edf6f9;
-    height: 60px;
-    background-color: transparent;
-    font-weight: bold;
-    position: relative;
-    z-index: 10;
-    transition: 0.5s linear;
-}
-header button::after {
-    content: "";
-    top: 0;
-    left: -1%;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    z-index: -1;
-    position: absolute;
-    width: 150px;
-    height: 57px;
-    background-color: #edf6f9;
-    transition: 0.5s linear;
-}
-header button:hover {
-    color: #02040f;
-    transition: 0.5s linear;
-}
-header button:hover::after {
-    transform: scaleX(1);
+    margin-right: 150px;
+    transition: 0.5s  linear;
 }
 header a {
     margin-right: 45px;
@@ -110,7 +74,7 @@ header nav a::after {
     width: 100%;
     height: 3px;
     bottom: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s  linear;
     left: 0;
     background-color: #edf6f9;
 }
@@ -126,7 +90,7 @@ header.start i {
 header img {
     width: 300px;
     height: 100px;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s  linear;
     cursor: pointer;
     margin-left: 20px;
 }
@@ -146,12 +110,12 @@ header img {
     margin-bottom: 0px;
     text-align: center;
     position: absolute;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s  linear;
 }
 #home-text.start {
     opacity: 1;
     margin-bottom: 100px;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s  linear;
 
 }
 #home-text h1 {
@@ -197,7 +161,7 @@ header img {
 #home-text-buttons button::after {
     position: absolute;
     background-color: #edf6f9;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s  linear;
     width: 205px;
     transform-origin: bottom;
     transform: scaleY(0);
@@ -240,7 +204,7 @@ footer a {
     justify-content: center;
     border-radius: 50%;
     color: #02040f;
-    transition:0.5s ease-in-out ;
+    transition:0.5s  linear ;
 }
 footer a:hover {
     background-color: #02040f;
@@ -285,7 +249,7 @@ footer i {
     height: 60px;
     position: relative;
     font-size: 2rem;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     border-radius: 50%;
     color: #02040f;
     
@@ -302,7 +266,6 @@ footer i {
     header.start i {
         display: none;
     }
-<<<<<<< HEAD
     video {
         height: 110vh;
     }
@@ -325,7 +288,7 @@ footer i {
     }
     footer {
         margin-bottom: 100px;
-=======
+    }
     #home-text {
         margin-top: 0;
     }
@@ -350,7 +313,6 @@ footer i {
     }
     footer {
         margin-top: 150px;
->>>>>>> 8286d3049c3c7a52c12daab4b0ac6dcd78d73704
     }
 }
 @media (min-width:0px) and (max-width:1240px) {
