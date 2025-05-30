@@ -1,98 +1,8 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(../Fonts/Roboto-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: "Anton";
-    src: url(../Fonts/Anton-Regular.ttf);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-
-}
-::selection  {
-    background-color: #02040f;
-    color: #edf6f9;
-}
-button, input {
-    outline: none;
-}
-a {
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-}
-ul, ol {
-    list-style: none;
-}
+@import url("./global.css");
 body {
     width: 100%;
     min-height: 100vh;
     background-color: #02040f;
-}
-header {
-    font-family: "Roboto";
-    height: 15vh;
-    transform: translateY(-80px);
-    transition: 0.8s linear;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    position: relative;
-    opacity: 0;
-    z-index: 10;
-}
-header.start {
-    transform: translateY(0px);
-    opacity: 1;
-}
-header nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    scale: 1;
-    margin-right: 150px;
-    transition: 0.5s  linear;
-}
-header a {
-    margin-right: 45px;
-    font-size: 24px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    color:#edf6f9;
-    position: relative;
-}
-header nav a::after {
-    content: "";
-    position:absolute;
-    transform: scaleX(0);
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    transition: 0.5s  linear;
-    left: 0;
-    background-color: #edf6f9;
-}
-header a:hover::after {
-    transform: scaleX(1);
-}
-header.start i {
-    display: none;
-    font-size: 3rem;
-    cursor: pointer;
-    margin-right: 20px;
-}
-header img {
-    width: 300px;
-    height: 100px;
-    transition: 0.5s  linear;
-    cursor: pointer;
-    margin-left: 20px;
 }
 #home {
     position: relative;
@@ -110,12 +20,12 @@ header img {
     margin-bottom: 0px;
     text-align: center;
     position: absolute;
-    transition: 0.5s  linear;
+    transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 #home-text.start {
     opacity: 1;
     margin-bottom: 100px;
-    transition: 0.8s  linear;
+    transition: 0.8s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 
 }
 #home-text h1 {
@@ -145,7 +55,7 @@ header img {
     position: relative;
     margin-right: 20px;
     margin-left: 20px;
-    transition: 0.5s linear;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     cursor: pointer;
 }
 #home-text-buttons button:hover {
@@ -156,12 +66,12 @@ header img {
     height: 100px;
     width: 205px;
     transform: scaleY(1);
-    transition: 0.5s linear;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 #home-text-buttons button::after {
     position: absolute;
     background-color: #edf6f9;
-    transition: 0.5s  linear;
+    transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
     width: 205px;
     transform-origin: bottom;
     transform: scaleY(0);
@@ -186,7 +96,6 @@ video {
     position: absolute;
 }
 footer {
-    background-color: #02040f;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -196,7 +105,6 @@ footer a {
     background-color: #edf6f9;
     margin-left:40px;
     margin-right: 40px;
-    margin-left: 40px;
     height: 65px;
     width: 65px;
     display: flex;
@@ -204,7 +112,7 @@ footer a {
     justify-content: center;
     border-radius: 50%;
     color: #02040f;
-    transition:0.5s  linear ;
+    transition:0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 }
 footer a:hover {
     background-color: #02040f;
@@ -238,21 +146,39 @@ footer i {
 }
 #menu-for-phones nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 #menu-for-phones a {
-    background-color: #edf6f9;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 25%;
+    height: 100%;
     position: relative;
     font-size: 2rem;
-    transform: translateY(-30px);
-    border-radius: 50%;
     color: #02040f;
     
+}
+#menu-for-phones i {
+    color: #edf6f9;
+}
+#menu-for-phones a:active {
+    background-color: #edf6f9;
+}
+#menu-for-phones a:active i {
+    color: #02040f;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+@media (max-width:320px) {
+    footer  a {
+        background-color: red;
+        height: 55px;
+        width: 55px;
+    }
+    footer i {
+        font-size: 2.5rem;
+    }
 }
 @media (max-width: 500px) {
     * {
@@ -280,14 +206,8 @@ footer i {
             border: 5px solid #edf6f9;
             font-size: 1.2rem;
     }
-    #menu-for-phones a {
-        width: 45px;
-        height: 45px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
     footer {
-        margin-bottom: 100px;
+        height: 30vh;
     }
     #home-text {
         margin-top: 0;
@@ -296,7 +216,8 @@ footer i {
         margin-top: 250px;
     }
     #home-text-buttons button {
-        width: 200px;
+        width: 130px;
+        height: 80px;
         border-radius: 30px;
     }
     #home-text-buttons button:hover::after {
@@ -310,9 +231,6 @@ footer i {
     }
     #home-opacity {
         height: 120vh;
-    }
-    footer {
-        margin-top: 150px;
     }
 }
 @media (min-width:0px) and (max-width:1240px) {
@@ -362,5 +280,8 @@ footer i {
     #menu-for-phones a {
         margin-left: 50px;
         margin-right: 50px;
+    }
+    footer {
+        margin-bottom: 100px;
     }
 }
