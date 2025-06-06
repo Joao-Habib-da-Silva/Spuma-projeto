@@ -170,28 +170,8 @@ footer i {
     color: #02040f;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-@media (max-width:320px) {
-    footer  a {
-        background-color: red;
-        height: 55px;
-        width: 55px;
-    }
-    footer i {
-        font-size: 2.5rem;
-    }
-}
 @media (max-width: 500px) {
-    * {
-        cursor: none;
-    }
-    header.start img {
-        margin-left: 0px;
-        width: 200px;
-        height: 66px;
-    }
-    header.start i {
-        display: none;
-    }
+    
     video {
         height: 110vh;
     }
@@ -205,9 +185,6 @@ footer i {
             width: 140px;
             border: 5px solid #edf6f9;
             font-size: 1.2rem;
-    }
-    footer {
-        height: 30vh;
     }
     #home-text {
         margin-top: 0;
@@ -233,18 +210,6 @@ footer i {
         height: 120vh;
     }
 }
-@media (min-width:0px) and (max-width:1240px) {
-    #menu-for-phones {
-        display: flex;
-        justify-content: center;
-    }
-    header.start nav {
-        display: none;
-    }
-    header.start button {
-        display: none;
-    }
-}
 @media (max-width:350px) {
     #home-text.start{
         margin-bottom: 200px;
@@ -268,20 +233,4 @@ footer i {
         height: 40px;
     }
 
-}
-@media (min-width:700px) and (max-width:1240px) {
-    header.start nav {
-        display: none;
-        margin-left: 50px;
-    }
-    header.start button {
-        display: none;
-    }
-    #menu-for-phones a {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    footer {
-        margin-bottom: 100px;
-    }
 }
