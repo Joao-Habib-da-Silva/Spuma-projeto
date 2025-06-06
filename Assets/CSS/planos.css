@@ -7,12 +7,14 @@
 #container-inicio {
     display: flex;
     min-height: 90vh;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 #container-inicio img {
     width: 700px;
     height: 700px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 50px;
     opacity: 0;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transform: translateY(50px);
@@ -77,6 +79,8 @@
     align-items: center;
 }
 #planos nav {
+    margin-top: 25px;
+    margin-bottom: 50px;
     height: 10vh;
     display: flex;
     border: 3px solid #edf6f9;
@@ -97,17 +101,120 @@
     justify-content: center;
     display: flex;
     z-index: 10;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 }
-#menu-bar {
-    width: 200px;
-    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    position: absolute;
-    margin-right: 400px;
-    height: 10vh;
-    border-radius: 5px ;
+#planos nav a:hover {
     background-color: #edf6f9;
+    color: #02040f;
+    
+}
+.plano {
+    color: #edf6f9;
+    background-color: #02040f;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 30px;
+    padding-top: 20px;
 }
 
-#bicicletas:hover #menu-bar {
-    margin-right: 200px;
+.plano h1 {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-family: "roboto";
+}
+.plano h1::before {
+    position: absolute;
+    content: "";
+    bottom: 30%;
+    transform: translateX(-25px) rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+#plano1 h1::before {
+    background-color: #F2CD88;
+}
+#plano2 h1::before {
+    background-color: #F26B8F;
+}
+#plano3 h1::before {
+    background-color: #EE05F2;
+}
+.plano ul {
+    height: 50vh;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.plano li {
+    position: relative;
+    padding-left: 25px;
+    font-family: "roboto";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.plano li::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    left: 0;
+    top: 35%;
+    transform: translateX(0px) rotate(45deg);
+}
+
+#plano-escolher {
+    display: flex;
+    min-height:80vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #edf6f9;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.plano div {
+    width: 100%;
+    height: 14vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plano button {
+    font-family: "roboto";
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 3px solid #edf6f9;
+    background-color: #02040f;
+    color: #edf6f9;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    width: 200px;
+    z-index: 10;
+    border-radius: 10px;
+}
+.plano button::after {
+    width: 0px;
+    background-color: #edf6f9;
+    height: 65px;
+    border-radius: 5px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.plano button:hover::after {
+    width: 197px;
+}
+.plano button:hover {
+    color: #02040f;
 }
