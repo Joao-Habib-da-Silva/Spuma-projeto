@@ -96,30 +96,6 @@ header img {
     margin-left: 20px;
 }
 
-footer {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-footer a {
-    background-color: #edf6f9;
-    margin-left:40px;
-    margin-right: 40px;
-    height: 65px;
-    width: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #02040f;
-    transition:0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
-}
-footer a:hover {
-    background-color: #02040f;
-    color: #edf6f9;
-    scale: 1.2;
-}
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -131,24 +107,20 @@ footer a:hover {
     border-radius: 30px;
 }
 
-footer i {
-    font-size: 2.99rem;
-
-    
-}
 
 #menu-for-phones {
     background-color: #02040f;
     position: fixed;
-    display: none;
     width: 100%;
     height: 10vh;
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     bottom: -20%;
+    z-index: 100;
+    display: flex;
 }
 #menu-for-phones.start {
-    opacity: 1;
+    opacity: 0;
     bottom:0;
 }
 #menu-for-phones nav {
@@ -165,7 +137,16 @@ footer i {
     position: relative;
     font-size: 2rem;
     color: #02040f;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     
+}
+#menu-for-phones a:hover {
+    background-color: #edf6f9;
+
+}
+#menu-for-phones a:hover i {
+    color: #02040f;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000)
 }
 #menu-for-phones i {
     color: #edf6f9;
@@ -176,17 +157,6 @@ footer i {
 #menu-for-phones a:active i {
     color: #02040f;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-}
-
-@media (max-width:320px) {
-    footer  a {
-        background-color: red;
-        height: 55px;
-        width: 55px;
-    }
-    footer i {
-        font-size: 2.5rem;
-    }
 }
 @media (max-width: 500px) {
     * {
@@ -200,17 +170,14 @@ footer i {
     header.start i {
         display: none;
     }
-    
-    footer {
-        height: 30vh;
-    }
+
 
 }
 
 @media (min-width:0px) and (max-width:1240px) {
-    #menu-for-phones {
-        display: flex;
-        justify-content: center;
+    #menu-for-phones.start {
+        opacity: 1;
+        bottom: 0;
     }
     header.start nav {
         display: none;
@@ -239,8 +206,5 @@ footer i {
     #menu-for-phones a {
         margin-left: 50px;
         margin-right: 50px;
-    }
-    footer {
-        margin-bottom: 100px;
     }
 }

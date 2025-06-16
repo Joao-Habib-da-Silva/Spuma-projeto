@@ -11,8 +11,8 @@
     margin-bottom: 70px;
 }
 #container-inicio img {
-    width: 700px;
-    height: 700px;
+    width: 550px;
+    height: 550px;
     object-fit: cover;
     border-radius: 50px;
     opacity: 0;
@@ -164,7 +164,7 @@
     transform: translateX(0px) rotate(45deg);
 }
 
-#plano-escolher {
+#plano-escolher{
     display: flex;
     min-height:80vh;
     padding-top: 20px;
@@ -173,6 +173,7 @@
     background-color: #edf6f9;
     justify-content: space-between;
     margin-top: 30px;
+    padding-bottom: 50px;
     padding-right: 25px;
     padding-left: 25px;
 }
@@ -217,4 +218,60 @@
 }
 .plano button:hover {
     color: #02040f;
+}
+@media (max-width: 500px) {
+    #container-inicio {
+        display: block;
+    }
+    #container-inicio img {
+        width: 350px;
+        height: 350px;
+        padding: 27px;
+    }
+    #container-inicio-imagem {
+        width: 100%;
+        height: 60vh;
+    }
+    #container-sobre {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    #container-sobre h2 {
+        font-size: 1.6rem;
+        margin-top: 50px;
+    }
+    #container-inicio {
+        margin-bottom: 20px;
+    }
+    #menu {
+        width: 100%;
+        height:50vh;
+    }
+    #menu nav {
+        width: 80%;
+        display: block;
+        height: 27vh;
+        
+    }
+    #menu nav a {
+        height: 8.77vh;
+        width: 100%;
+    }
+    #plano-escolher{
+        display: block;
+        padding: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .plano {
+        margin: 0;
+        margin-bottom: 70px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
 }

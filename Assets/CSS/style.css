@@ -95,30 +95,7 @@ video {
     object-fit: fill;
     position: absolute;
 }
-footer {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-footer a {
-    background-color: #edf6f9;
-    margin-left:40px;
-    margin-right: 40px;
-    height: 65px;
-    width: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #02040f;
-    transition:0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
-}
-footer a:hover {
-    background-color: #02040f;
-    color: #edf6f9;
-    scale: 1.2;
-}
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -130,50 +107,12 @@ footer a:hover {
     border-radius: 30px;
 }
 
-footer i {
-    font-size: 3rem;
 
-    
-}
-#menu-for-phones {
-    background-color: #02040f;
-    position: fixed;
-    display: none;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-
-}
-#menu-for-phones nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-#menu-for-phones a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 100%;
-    position: relative;
-    font-size: 2rem;
-    color: #02040f;
-    
-}
-#menu-for-phones i {
-    color: #edf6f9;
-}
-#menu-for-phones a:active {
-    background-color: #edf6f9;
-}
-#menu-for-phones a:active i {
-    color: #02040f;
-    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-}
 @media (max-width: 500px) {
     
     video {
         height: 110vh;
+        object-fit: contain;
     }
     #home-opacity {
         height: 110vh;
@@ -187,10 +126,10 @@ footer i {
             font-size: 1.2rem;
     }
     #home-text {
-        margin-top: 0;
+        margin-top: 250px;
     }
     #home-text.start {
-        margin-top: 250px;
+        margin-top: 50px;
     }
     #home-text-buttons button {
         width: 130px;
