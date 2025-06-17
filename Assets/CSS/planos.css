@@ -219,7 +219,7 @@
 .plano button:hover {
     color: #02040f;
 }
-@media (max-width:1000px) {
+@media (max-width:1240px) {
     #container-inicio {
         display: block;
     }
