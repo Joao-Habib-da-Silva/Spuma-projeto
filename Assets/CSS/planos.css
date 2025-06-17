@@ -219,6 +219,11 @@
 .plano button:hover {
     color: #02040f;
 }
+@media (max-width:1000px) {
+    #container-inicio {
+        display: block;
+    }
+}
 @media (max-width: 500px) {
     #container-inicio img {
             width: 350px;
@@ -226,6 +231,7 @@
             padding: 27px;
         }
 }
+
 @media (max-width: 800px) {
     #container-inicio {
         display: block;
