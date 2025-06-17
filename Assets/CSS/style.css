@@ -165,11 +165,4 @@ video {
     #home-text-buttons button::after {
         right: -20%;
     }
-    #menu-for-phones a {
-        width: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 40px;
-    }
-
 }
