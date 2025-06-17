@@ -188,8 +188,10 @@ header img {
 }
 @media (max-width:350px) {
     #menu-for-phones a {
-        width: 40px;
-        height: 40px;
+        width: 25%;
+        height: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
