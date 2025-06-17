@@ -189,8 +189,6 @@ header img {
 @media (max-width:350px) {
     #menu-for-phones a {
         width: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
         height: 40px;
     }
 }
