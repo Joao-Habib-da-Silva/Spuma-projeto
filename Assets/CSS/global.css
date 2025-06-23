@@ -57,7 +57,7 @@ header nav {
     display: flex;
     align-items: center;
     scale: 1;
-    margin-right: 200px;
+    margin-right: 300px;
     transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 header a {
