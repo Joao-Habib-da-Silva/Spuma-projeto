@@ -20,3 +20,4 @@ planejamentos, um projeto futuro de uma aplicação mobile, entre outras coisas.
     - <a href="#responsividade" style="color:#edf6f9; text-decoration:none;">Responsividade</a>
     - <a href="#navegacao-entre-navegadores" style="color:#edf6f9; text-decoration:none;">Navegação entre navegadores</a>
 <br>
+lembra de escrever as versões em inglês e espanhol jhlivros
