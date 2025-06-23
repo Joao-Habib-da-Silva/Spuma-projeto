@@ -13,6 +13,11 @@
     scroll-behavior: smooth;
 
 }
+#container {
+    color: #edf6f9;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
 ::selection  {
     background-color: #02040f;
     color: #edf6f9;
