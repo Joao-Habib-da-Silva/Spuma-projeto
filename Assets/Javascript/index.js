@@ -6,3 +6,7 @@ window.onload = function() {
 
 
 }
+
+window.document.getElementById("modo-dark-and-light").addEventListener("click", function() {
+  window.document.getElementById("bolinha").classList.toggle("ativado")
+})

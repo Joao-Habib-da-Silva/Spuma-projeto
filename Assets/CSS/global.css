@@ -52,7 +52,33 @@ header {
     opacity: 0;
     z-index: 10;
 }
+#modo-dark-and-light {
+    background-color: #02040f;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 2px;
+    transition: 0.65s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 
+}
+#bolinha {
+    width: 30px;
+    height: 30px;
+    background-color: #edf6f9;
+    border-radius: 50%;
+    left: 0%;
+    transition: 0.65s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    position: absolute;
+}
+#bolinha.ativado {
+    transition: 0.65s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    left: 63%;
+}
 header.start {
     transform: translateY(0px);
     opacity: 1;
@@ -62,7 +88,7 @@ header nav {
     display: flex;
     align-items: center;
     scale: 1;
-    margin-right: 300px;
+    margin-right: 100px;
     transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 header a {
@@ -186,6 +212,9 @@ header img {
     }
     header.start nav {
         display: none;
+    }
+    #modo-dark-and-light {
+        display: none ;
     }
     header.start button {
         display: none;
