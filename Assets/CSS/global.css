@@ -6,6 +6,18 @@
     font-family: "Anton";
     src: url(../Fonts/Anton-Regular.ttf);
 }
+:root {
+    --dark:#02040f;
+    --light:#edf6f9;
+    --dark-light:#1A1D2A;
+    --light-dark:#d6e8ec;
+}
+:root.ativado {
+        --dark:#edf6f9;
+        --light:#02040f;
+         --dark-light:#d6e8ec;
+         --light-dark:#1A1D2A;
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +26,14 @@
 
 }
 #container {
-    color: #edf6f9;
+    color: var(--light);
     min-height: 100vh;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     overflow-y: hidden;
 }
 ::selection  {
-    background-color: #02040f;
-    color: #edf6f9;
+    background-color: var(--dark);
+    color: var(--light);
 }
 button, input {
     outline: none;
@@ -37,7 +50,7 @@ ul, ol {
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #02040f;
+    background-color: var(--dark);
 }
 header {
     font-family: "Roboto";
@@ -52,8 +65,11 @@ header {
     opacity: 0;
     z-index: 10;
 }
+a, li, h1, h2, h3, h4, h5, h6, p {
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
 #modo-dark-and-light {
-    background-color: #02040f;
+    background-color: #1A1D2A;
     width: 100px;
     height: 40px;
     border-radius: 30px;
@@ -71,7 +87,7 @@ header {
     height: 30px;
     background-color: #edf6f9;
     border-radius: 50%;
-    left: 0%;
+    left: 7%;
     transition: 0.65s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     position: absolute;
 }
@@ -96,8 +112,9 @@ header a {
     font-size: 24px;
     letter-spacing: 1.5px;
     font-weight: 600;
-    color:#edf6f9;
+    color:var(--light);
     position: relative;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 header nav a::after {
     content: "";
@@ -108,7 +125,7 @@ header nav a::after {
     bottom: 0;
     transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
     left: 0;
-    background-color: #edf6f9;
+    background-color: var(--light);
 }
 header a:hover::after {
     transform: scaleX(1);
@@ -134,13 +151,13 @@ header img {
     background-color: #8d99ae;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #02040f;
+    background-color: var(--dark);
     border-radius: 30px;
 }
 
 
 #menu-for-phones {
-    background-color: #02040f;
+    background-color: var(--dark);
     position: fixed;
     width: 100%;
     height: 10vh;
@@ -167,26 +184,26 @@ header img {
     height: 100%;
     position: relative;
     font-size: 2rem;
-    color: #02040f;
+    color: var(--dark);
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     
 }
 #menu-for-phones a:hover {
-    background-color: #edf6f9;
+    background-color: var(--light);
 
 }
 #menu-for-phones a:hover i {
-    color: #02040f;
+    color: var(--dark);
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000)
 }
 #menu-for-phones i {
-    color: #edf6f9;
+    color: var(--light);
 }
 #menu-for-phones a:active {
-    background-color: #edf6f9;
+    background-color: var(--light);
 }
 #menu-for-phones a:active i {
-    color: #02040f;
+    color: var(--dark);
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 @media (max-width: 500px) {
