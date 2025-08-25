@@ -17,13 +17,12 @@
     position: relative;
     z-index: 10000;
     border: none;
-    cursor: pointer;
     background-color: transparent;
     width: 100px;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 
 }
-#produtos button:nth-child(1):hover {
+#seta-esquerda.opacidade:hover {
     padding-right: 10px;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 
@@ -31,6 +30,9 @@
 #seta-direita:hover {
     padding-left: 10px;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
+}
+#seta-direita {
+    cursor: pointer;
 }
 button i {
     font-size: 5rem;
@@ -102,4 +104,12 @@ font-family: "Roboto";
 }
 select:hover {
     background-color: var(--dark);
+}
+#seta-esquerda {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+#seta-esquerda.opacidade {
+    opacity: 1;
+    cursor: pointer;
 }

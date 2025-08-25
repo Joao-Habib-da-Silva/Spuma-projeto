@@ -4,7 +4,7 @@ window.document
   .getElementById("modo-dark-and-light")
   .addEventListener("click", function () {
     window.document.getElementById("bolinha").classList.toggle("ativado");
-    var html = window.document.documentElement;
+    const html = window.document.documentElement;
     html.classList.toggle("ativado");
     if (html.classList.contains("ativado")) {
       localStorage.setItem("theme", "light");
@@ -12,16 +12,22 @@ window.document
       localStorage.setItem("theme", "dark");
     }
   });
-window.onload = function () {
-  window.document.getElementById("header").classList.add("start");
-  var save = localStorage.getItem("theme")
-  var html = window.document.documentElement
-  if (save == "dark") {
-      window.document.getElementById("bolinha").classList.remove("ativado")    
-      html.classList.remove("ativado")
-  }
-  else {
-    window.document.getElementById("bolinha").classList.add("ativado")
-    html.classList.add("ativado")
-  }
-};
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.getElementById("header");
+    const menu = document.getElementById("menu-for-phones");
+    const bolinha = document.getElementById("bolinha");
+    const html = document.documentElement;
+
+    header.classList.add("start");
+    menu.classList.add("start");
+
+    const theme = localStorage.getItem("theme");
+
+    if (theme === "dark") {
+      bolinha.classList.remove("ativado");
+      html.classList.remove("ativado");
+    } else {
+      bolinha.classList.add("ativado");
+      html.classList.add("ativado");
+    }
+  });

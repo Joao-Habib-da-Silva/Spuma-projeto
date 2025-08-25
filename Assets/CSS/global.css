@@ -32,8 +32,8 @@
     overflow-y: hidden;
 }
 ::selection  {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
 }
 button, input {
     outline: none;
