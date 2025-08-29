@@ -1,17 +1,4 @@
-var n =0
-window.document.getElementById("seta-direita").addEventListener("click", function() {
-    n +=1
-    if (n > 0) {
-        window.document.getElementById("seta-esquerda").classList.add("opacidade")
-    }
-})
-window.document.getElementById("seta-esquerda").addEventListener("click", function() {
-    n -= 1
-    if(n < 1) {
-        window.document.getElementById("seta-esquerda").classList.remove("opacidade")
-    }
-})
-var jazon = [
+[
   {
     "marca": "Vonixx",
     "nome": "V-MOL",
@@ -157,29 +144,3 @@ var jazon = [
     "imagem": "https://protelim.com.br/wp-content/uploads/2021/09/power-tire-novo.jpg"
   }
 ]
-jazon.forEach(produto => {
-    console.log(produto)
-    const roleta = window.document.getElementById("roleta")
-    const divs = window.document.createElement("div")
-    divs.classList.add("products")
-    divs.innerHTML = ` <div class="produtos-cima">
-    <h1>${produto["nome"]}</h1>
-    </div>
-    <div class="produtos-meio">
-    <div class="imagem-area"><img src="${produto.imagem}"></div>
-    <p class="descricao">
-    ${produto["descricao"]}</p>
-    </div>
-    <div class="produtos-comeco">
-        <div class="produtos-comeco-esquerdo">
-            <button><i class='bx  bx-plus'></i> </button>
-            <button><i class='bx  bx-minus'></i> </button>
-    </div>
-        <div class="produtos-comeco-direito">
-            <button>Quero</button>
-        </div>
-    </div>
-    </div>
-    `;
-    roleta.appendChild(divs)
-})
