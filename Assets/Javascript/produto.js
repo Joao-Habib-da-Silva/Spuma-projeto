@@ -1,12 +1,15 @@
 var n =0
+
 window.document.getElementById("seta-direita").addEventListener("click", function() {
     n +=1
+    var rolet = window.document.getElementById("roleta")
     if (n > 0) {
         window.document.getElementById("seta-esquerda").classList.add("opacidade")
     }
 })
 window.document.getElementById("seta-esquerda").addEventListener("click", function() {
     n -= 1
+    var rolet = window.document.getElementById("roleta")
     if(n < 1) {
         window.document.getElementById("seta-esquerda").classList.remove("opacidade")
     }

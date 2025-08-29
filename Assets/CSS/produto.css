@@ -9,7 +9,7 @@
 }
 #produtos {
     width: 10000vh;
-    min-height: 65vh;
+    min-height: 75vh;
     display: flex;
     z-index: 0;
     justify-content: center;
@@ -18,7 +18,7 @@
     position: absolute;
     z-index: 10;
        width: 100%;
-    min-height: 65vh;
+    min-height: 75vh;
     display: flex;
     justify-content: space-between;
 
@@ -52,6 +52,7 @@
     width: 100000vh;
     display: flex;
     overflow: hidden;
+    padding-left: 100px;
 }
 #lupa {
     background-color: var(--dark-light);
@@ -125,7 +126,7 @@ select:hover {
     cursor: pointer;
 }
 .products {
-    width: 50vh;
+    width: 55vh;
     height: 90%;
     background-color: green;
     margin-left: 20px;
@@ -149,7 +150,7 @@ select:hover {
 
 }
 .imagem-area {
-    background-color: red;
+    background-color: pink;
     width: 100%;
     height: 70%;
     align-items: center;
@@ -191,6 +192,7 @@ select:hover {
     outline: none;
     border: none;
     width: 5.5rem;
+    cursor: pointer;
     height: 2.5rem;
     border-radius: 30px;
 }
