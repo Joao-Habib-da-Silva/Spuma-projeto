@@ -189,6 +189,7 @@ select:hover {
 }
 .produtos-comeco-esquerdo button {
     width: 3rem;
+    font-size: 2rem;
     margin-right: 1.1rem;
     height: 3rem;
     background-color: var(--dark);
@@ -226,5 +227,4 @@ select:hover {
 .products img {
     width: 200px;
     height: 200px;
-    mix-blend-mode:screen;
 }
