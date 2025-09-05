@@ -1,13 +1,32 @@
 var n =0
+window.document.getElementById("input").addEventListener("input", function() {
+  if(window.document.getElementById("input").value != "") {
 
+    window.document.querySelectorAll(".products").forEach(product => {
+      if(product.id.toLowerCase().includes(window.document.getElementById("input").value.toLowerCase())) {
+          product.style.display = "block"
+          window.document.getElementById("roleta").style.transform = `translateX(0px)`
+      }
+      else {
+        product.style.display = "none"
+      }
+    })
+  }
+  else {
+    window.document.getElementById("seta-esquerda").style.display = "block"
+    window.document.getElementById("seta-direita").style.display = "block"
+    window.document.querySelectorAll(".products").forEach(product => {
+      product.style.display = "block"
+    })
+  }
+})
 window.document.getElementById("seta-direita").addEventListener("click", function() {
-  if (n != 5) {  
+  
   n +=1
-    var rolet = window.document.getElementById("roleta")
     if (n > 0) {
         window.document.getElementById("seta-esquerda").classList.add("opacidade")
-        window.document.getElementById("roleta").style.transform = `translateX(${n * -101.56}rem)`
-    }}
+        window.document.getElementById("roleta").style.transform = `translateX(${n * -80}rem)`
+    }
     else{
       window.document.getElementById("roleta").style.transform += `translateX(0px)`
       window.document.getElementById("seta-direita").classList.add("desabilitado")
@@ -28,7 +47,7 @@ window.document.getElementById("seta-esquerda").addEventListener("click", functi
          if (n == 4) {
       window.document.getElementById("seta-direita").classList.remove("desabilitado")
     }
-      window.document.getElementById("roleta").style.transform = `translateX(${n * -101.56}rem)`
+      window.document.getElementById("roleta").style.transform = `translateX(${n * -80}rem)`
       }
       console.log(n)
       
@@ -184,7 +203,8 @@ jazon.forEach(produto => {
     const roleta = window.document.getElementById("roleta")
     const divs = window.document.createElement("div")
     divs.classList.add("products")
-    divs.innerHTML = ` <div class="produtos-cima">
+    divs.id = produto["nome"].toLowerCase()
+    divs.innerHTML = ` <div class="produtos-cima" >
     <h1>${produto["nome"]}</h1>
     </div>
     <div class="produtos-meio">
