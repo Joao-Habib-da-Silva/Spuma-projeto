@@ -11,3 +11,6 @@
     padding: 50px;
     background-color: var(--dark-light);
 }
+input {
+    width: 25vh;
+}

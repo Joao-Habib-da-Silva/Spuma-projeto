@@ -62,7 +62,6 @@
     width:15% ;
     height: 100%;
     display: flex;
-    cursor: pointer;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -73,11 +72,6 @@
 #lupa i {
     scale: 1;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
-}
-#lupa:hover i {
-    scale: 1.8;
-    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
-
 }
 #pesquisa-lupa {
     display: flex;
