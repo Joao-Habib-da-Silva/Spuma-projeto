@@ -25,6 +25,42 @@
     scroll-behavior: smooth;
 
 }
+header button {
+    cursor: pointer;
+    outline: none;
+    width: 130px;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.05rem;
+    position: relative;
+    height: 4rem;
+    border: 3px solid var(--light);
+    background-color: var(--dark);
+    color: var(--light);
+    z-index: 10;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+}
+header button::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    border-radius: 10px;
+        transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    height: 3.80rem;
+    z-index: -1;
+    background-color: var(--light);
+    top:0%;
+    left: 0;
+
+}
+header button:hover::after {
+    width: 127px;
+}
+header button:hover {
+    color: var(--dark);
+}
 #container {
     color: var(--light);
     min-height: 100vh;
@@ -104,7 +140,6 @@ header nav {
     display: flex;
     align-items: center;
     scale: 1;
-    margin-right: 100px;
     transition: 0.5s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 header a {

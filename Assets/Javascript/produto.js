@@ -1,18 +1,37 @@
 var n =0
 
 window.document.getElementById("seta-direita").addEventListener("click", function() {
-    n +=1
+  if (n != 5) {  
+  n +=1
     var rolet = window.document.getElementById("roleta")
     if (n > 0) {
         window.document.getElementById("seta-esquerda").classList.add("opacidade")
+        window.document.getElementById("roleta").style.transform = `translateX(${n * -101.56}rem)`
+    }}
+    else{
+      window.document.getElementById("roleta").style.transform += `translateX(0px)`
+      window.document.getElementById("seta-direita").classList.add("desabilitado")
     }
+    console.log(n)
 })
 window.document.getElementById("seta-esquerda").addEventListener("click", function() {
     n -= 1
+    if(n < 0) {
+      n = 0
+    }
     var rolet = window.document.getElementById("roleta")
     if(n < 1) {
         window.document.getElementById("seta-esquerda").classList.remove("opacidade")
+      window.document.getElementById("roleta").style.transform = `translateX(0px)`
+      }
+      else {
+         if (n == 4) {
+      window.document.getElementById("seta-direita").classList.remove("desabilitado")
     }
+      window.document.getElementById("roleta").style.transform = `translateX(${n * -101.56}rem)`
+      }
+      console.log(n)
+      
 })
 var jazon = [
   {
@@ -175,8 +194,8 @@ jazon.forEach(produto => {
     </div>
     <div class="produtos-comeco">
         <div class="produtos-comeco-esquerdo">
-            <button><i class='bx  bx-plus'></i> </button>
-            <button><i class='bx  bx-minus'></i> </button>
+            <button id="botao">+ </button>
+            <button>- </button>
     </div>
         <div class="produtos-comeco-direito">
             <button>Quero</button>
