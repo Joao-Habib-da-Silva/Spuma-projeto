@@ -203,7 +203,7 @@ jazon.forEach(produto => {
     const roleta = window.document.getElementById("roleta")
     const divs = window.document.createElement("div")
     divs.classList.add("products")
-    divs.id = produto["nome"].toLowerCase()
+    divs.id = produto["nome"].toLowerCase() +" " + produto["tipo"].toLowerCase()
     divs.innerHTML = ` <div class="produtos-cima" >
     <h1>${produto["nome"]}</h1>
     </div>

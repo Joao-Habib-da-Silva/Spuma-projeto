@@ -1,10 +1,11 @@
 @import url(./global.css);
 #container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #login {
     width: 35%;
+    font-family: "Roboto";
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius:30px ;
@@ -12,5 +13,53 @@
     background-color: var(--dark-light);
 }
 input {
+    width: 25rem;
+    border-radius: 10px; 
+    padding-left: 20px;
+    outline: none;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    color: var(--light);
+    background-color: var(--dark-light);
+    border: 3px solid var(--light);
+    height: 4rem;
+}
+#parag-login {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#senhas {
+    width: 22rem;
+    border-radius: 10px 0px 0px 10px;
+    border-right: none ;
+}
+#modo-dark-and-light {
+    margin-right: 0px;
+}
+#button-enviar {
     width: 25vh;
+}
+#show-and-hide {
+    width: 3rem;
+    height: 4rem;
+    background-color: var(--dark-light);
+    border-top: 3px solid var(--light);
+    border-right: 3px solid var(--light);
+    border-bottom: 3px solid var(--light);
+    cursor: pointer;
+    color: var(--light);
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+}
+#show-and-hide i {
+    font-size: 2rem;
+}
+#senha-detalhes {
+    display: flex;
+    align-items: center;
+}
+#login-baixo {
+    height: 18rem;
+    text-align: center;
 }

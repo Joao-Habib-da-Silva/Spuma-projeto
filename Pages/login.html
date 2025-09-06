@@ -5,21 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spuma Website - Login</title>
     <link rel="stylesheet" href="../Assets/CSS/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div id="container">
+        <p><</p>
         <div id="login">
-            <p>LOGIN</p>
+            <p id="parag-login">LOGIN</p>
             <br>
-            <p>Email:</p>
-            <input type="text" placeholder="Email" name="email">
+            <p>Email/Nome de usuário:</p>
+            <input type="text" placeholder="Email:" name="email">
             <br>
             <p>Senha:</p>
-            <input type="password" placeholder="Coloque sua senha" name="senha">
-
+            <div id="senha-detalhes">
+                  <input type="password" placeholder="Coloque sua senha:" name="senha" id="senhas">
+            <button id="show-and-hide"><i class='bx bx-hide' id="abrir-fechar"></i></button>
+            </div>
+            <div id="login-baixo">
+                
+            <a href="">Esqueceu sua senha?</a>
             <p>Ainda não tem uma conta ? <a href="cadastro.html">Cadastre-se</a></p>
-            <button value="Enviar">Enviar</button>
+            <button value="Enviar" id="button-enviar">Enviar</button>
+            <br>
+            <div id="login-alternativas">
+                <button><i class='bx bxl-google'></i>  
+</button>
+<button><i class='bx bxl-microsoft'></i>
+</button>
+<button>
+    <i class='bx bxl-facebook'></i>
+
+</button>
+<button><i class='bx bxl-twitter'></i>
+</button>
+            </div>
+            </div>
         </div>
+        <div id="modo-dark-and-light">
+            <div id="bolinha"></div>
     </div>
     
     <div id="menu-for-phones">
@@ -30,5 +53,6 @@
         <a href=""><i class='bx  bx-phone'></i></a> 
         </nav>
     </div>
+    <script src="../Assets/Javascript/login.js"></script>
 </body>
 </html>
