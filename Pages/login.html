@@ -9,21 +9,21 @@
 </head>
 <body>
     <div id="container">
-        <p><</p>
+        <button onclick="window.history.back()" id="volte"><</button>
         <div id="login">
             <p id="parag-login">LOGIN</p>
             <br>
             <p>Email/Nome de usuário:</p>
-            <input type="text" placeholder="Email:" name="email">
+            <input type="text" placeholder="nomedoseuemail@suaplataforma.com" name="email">
             <br>
             <p>Senha:</p>
             <div id="senha-detalhes">
-                  <input type="password" placeholder="Coloque sua senha:" name="senha" id="senhas">
+                  <input type="password" placeholder="Senha123." name="senha" id="senhas">
             <button id="show-and-hide"><i class='bx bx-hide' id="abrir-fechar"></i></button>
             </div>
             <div id="login-baixo">
                 
-            <a href="">Esqueceu sua senha?</a>
+            <a href="" id="esqueci">Esqueceu sua senha?</a>
             <p>Ainda não tem uma conta ? <a href="cadastro.html">Cadastre-se</a></p>
             <button value="Enviar" id="button-enviar">Enviar</button>
             <br>

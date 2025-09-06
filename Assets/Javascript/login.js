@@ -10,3 +10,25 @@ window.document.getElementById("abrir-fechar").addEventListener("click", functio
         window.document.getElementById("senhas").type = "text"
     }
 })
+window.document.getElementById("modo-dark-and-light").addEventListener("click", function() {
+    window.document.getElementById("bolinha").classList.toggle("ativado")
+    window.document.documentElement.classList.toggle("ativado")
+    if(window.document.documentElement.classList.contains("ativado")) {
+        localStorage.setItem("theme", "light")
+    }
+    else {
+        localStorage.setItem("theme", "dark")
+    }
+})
+window.document.addEventListener("DOMContentLoaded", function() {
+    const theme = localStorage.getItem("theme")
+
+    if (theme == "dark") {
+        window.document.getElementById("bolinha").classList.remove("ativado")
+        window.document.documentElement.classList.remove("ativado")
+    }
+    else {
+        window.document.getElementById("bolinha").classList.add("ativado")
+        window.document.documentElement.classList.add("ativado")
+    }
+})
