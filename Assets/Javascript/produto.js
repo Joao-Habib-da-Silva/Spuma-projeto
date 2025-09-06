@@ -20,12 +20,46 @@ window.document.getElementById("input").addEventListener("input", function() {
     })
   }
 })
+window.document.getElementById("seletor-de-marcas").addEventListener("change", function() {
+  window.document.querySelectorAll(".products").forEach(product => {
+    if (
+      (window.document.getElementById("input").value.toLowerCase() == "" &&
+        product.id
+          .toLowerCase()
+          .includes(
+            window.document
+              .getElementById("seletor-de-marcas")
+              .value.toLowerCase()
+          )) ||
+      (window.document.getElementById("input").value.toLowerCase() != "" &&
+        product.id
+          .toLowerCase()
+          .includes(
+            window.document
+              .getElementById("seletor-de-marcas")
+              .value.toLowerCase()
+          ) &&
+        product.id
+          .toLowerCase()
+          .includes(
+            window.document.getElementById("input").value.toLowerCase()
+          ))
+    ) {
+      product.style.display = "block";
+      window.document.getElementById(
+        "roleta"
+      ).style.transform = `translateX(0px)`;
+    } else {
+      product.style.display = "none";
+    }
+  })
+})
 window.document.getElementById("seta-direita").addEventListener("click", function() {
   
   n +=1
     if (n > 0) {
         window.document.getElementById("seta-esquerda").classList.add("opacidade")
-        window.document.getElementById("roleta").style.transform = `translateX(${n * -80}rem)`
+        window.document.getElementById("roleta").style.transform = `translateX(${n * -82.5}rem)`
     }
     else{
       window.document.getElementById("roleta").style.transform += `translateX(0px)`
@@ -47,7 +81,7 @@ window.document.getElementById("seta-esquerda").addEventListener("click", functi
          if (n == 4) {
       window.document.getElementById("seta-direita").classList.remove("desabilitado")
     }
-      window.document.getElementById("roleta").style.transform = `translateX(${n * -80}rem)`
+      window.document.getElementById("roleta").style.transform = `translateX(${n * -82.5}rem)`
       }
       console.log(n)
       
@@ -279,7 +313,7 @@ jazon.forEach(produto => {
     const roleta = window.document.getElementById("roleta")
     const divs = window.document.createElement("div")
     divs.classList.add("products")
-    divs.id = produto["nome"].toLowerCase() +" " + produto["tipo"].toLowerCase()
+    divs.id = produto["nome"].toLowerCase() +" " + produto["tipo"].toLowerCase() + " " + produto["marca"].toLowerCase()
     divs.innerHTML = ` <div class="produtos-cima" >
     <h1>${produto["nome"]}</h1>
     </div>
