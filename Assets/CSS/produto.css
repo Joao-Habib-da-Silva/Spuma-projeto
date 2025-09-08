@@ -98,7 +98,6 @@
 }
 select {
 background-color: var(--dark-light);
-outline: none;
 border: none;
 color: var(--light);
 margin-right: 30px;

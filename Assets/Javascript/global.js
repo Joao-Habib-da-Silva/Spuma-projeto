@@ -1,10 +1,10 @@
-
-
-window.document
-  .getElementById("modo-dark-and-light")
-  .addEventListener("click", function () {
-    window.document.getElementById("bolinha").classList.toggle("ativado");
-    const html = window.document.documentElement;
+const select_mode = window.document.getElementById("modo-dark-and-light");
+const select_mode_bolinha = window.document.getElementById("bolinha");
+const html = window.document.documentElement;
+const header = document.getElementById("header");
+const menu_for_phones = document.getElementById("menu-for-phones");
+select_mode.addEventListener("click", function () {
+    select_mode_bolinha.classList.toggle("ativado");
     html.classList.toggle("ativado");
     if (html.classList.contains("ativado")) {
       localStorage.setItem("theme", "light");
@@ -13,16 +13,9 @@ window.document
     }
   });
   document.addEventListener("DOMContentLoaded", function () {
-    const header = document.getElementById("header");
-    const menu = document.getElementById("menu-for-phones");
-    const bolinha = document.getElementById("bolinha");
-    const html = document.documentElement;
-
     header.classList.add("start");
-    menu.classList.add("start");
-
+    menu_for_phones.classList.add("start");
     const theme = localStorage.getItem("theme");
-
     if (theme === "dark") {
       bolinha.classList.remove("ativado");
       html.classList.remove("ativado");
