@@ -1,18 +1,23 @@
-window.document.getElementById("abrir-fechar").addEventListener("click", function() {
-    if(window.document.getElementById("abrir-fechar").classList.contains("bx-show")) {
-        window.document.getElementById("abrir-fechar").classList.remove("bx-show")
-        window.document.getElementById("abrir-fechar").classList.add("bx-hide")
-        window.document.getElementById("senhas").type ="password"
+const olho_senha = window.document.getElementById("abrir-fechar")
+const senha = window.document.getElementById("senhas")
+const select_mode = window.document.getElementById("modo-dark-and-light")
+const bolinha = window.document.getElementById("bolinha")
+const html = window.document.documentElement
+olho_senha.addEventListener("click", function() {
+    if(olho_senha.classList.contains("bx-show")) {
+        olho_senha.classList.remove("bx-show")
+        olho_senha.classList.add("bx-hide")
+        senha.type ="password"
     }
     else {
-        window.document.getElementById("abrir-fechar").classList.remove("bx-hide")
-        window.document.getElementById("abrir-fechar").classList.add("bx-show")
-        window.document.getElementById("senhas").type = "text"
+        olho_senha.classList.remove("bx-hide")
+        olho_senha.classList.add("bx-show")
+        senha.type = "text"
     }
 })
-window.document.getElementById("modo-dark-and-light").addEventListener("click", function() {
-    window.document.getElementById("bolinha").classList.toggle("ativado")
-    window.document.documentElement.classList.toggle("ativado")
+select_mode.addEventListener("click", function() {
+    bolinha.classList.toggle("ativado")
+    html.classList.toggle("ativado")
     if(window.document.documentElement.classList.contains("ativado")) {
         localStorage.setItem("theme", "light")
     }
@@ -24,11 +29,11 @@ window.document.addEventListener("DOMContentLoaded", function() {
     const theme = localStorage.getItem("theme")
 
     if (theme == "dark") {
-        window.document.getElementById("bolinha").classList.remove("ativado")
-        window.document.documentElement.classList.remove("ativado")
+        bolinha.classList.remove("ativado")
+        html.classList.remove("ativado")
     }
     else {
-        window.document.getElementById("bolinha").classList.add("ativado")
-        window.document.documentElement.classList.add("ativado")
+        bolinha.classList.add("ativado")
+        html.classList.add("ativado")
     }
 })

@@ -26,7 +26,6 @@
 
 }
 header button {
-    cursor: pointer;
     width: 130px;
     border-radius: 10px;
     font-family: "Roboto";
@@ -72,6 +71,9 @@ header button:hover {
 }
 button, input {
     outline: none;
+}
+button {
+    cursor: pointer;
 }
 a {
     text-decoration: none;

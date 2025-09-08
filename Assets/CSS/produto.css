@@ -40,9 +40,6 @@
     padding-left: 10px;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 }
-#seta-direita {
-    cursor: pointer;
-}
 #seta-esquerda i, #seta-direita i {
     font-size: 5rem;
     z-index: 10;
@@ -101,9 +98,9 @@ background-color: var(--dark-light);
 border: none;
 color: var(--light);
 margin-right: 30px;
-width: 17vh;
+width: 18vh;
+padding-left: 10px;
 border-radius: 05px;
-padding-left: 20px;
 transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) ;
 height: 7vh;
 font-weight: 700;
@@ -191,7 +188,6 @@ select:hover {
     background-color: var(--dark);
     border: none;
     color: var(--light);
-    cursor: pointer;
     font-weight: bold;
     border-radius: 50%;
     scale: 1.0;
@@ -212,7 +208,6 @@ select:hover {
     border: none;
     width: 7rem;
     margin-left: 50px;
-    cursor: pointer;
     height: 3rem;
     border-radius: 30px;
     background-color: var(--dark);

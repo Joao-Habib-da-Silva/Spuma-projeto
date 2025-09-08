@@ -29,7 +29,6 @@ header a {
     opacity: 1;
     margin-bottom: 100px;
     transition: 0.8s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
-
 }
 #home-text h1 {
     font-family: "Anton";
@@ -59,7 +58,6 @@ header a {
     margin-right: 20px;
     margin-left: 20px;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    cursor: pointer;
 }
 #home-text-buttons button:hover {
     color: #02040f;
@@ -98,7 +96,6 @@ video {
     object-fit: fill;
     position: absolute;
 }
-
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -109,10 +106,7 @@ video {
     background-color: #02040f;
     border-radius: 30px;
 }
-
-
-@media (max-width: 500px) {
-    
+@media (max-width: 500px) {    
     video {
         height: 110vh;
         object-fit: contain;

@@ -1,92 +1,78 @@
-var n =0
-window.document.getElementById("input").addEventListener("input", function() {
-  if(window.document.getElementById("input").value != "") {
+let n = 0;
+var input = window.document.getElementById("input");
+const roleta = window.document.getElementById("roleta");
+var seta_esquerda = window.document.getElementById("seta-esquerda");
+var seta_direita = window.document.getElementById("seta-direita");
 
-    window.document.querySelectorAll(".products").forEach(product => {
-      if(product.id.toLowerCase().includes(window.document.getElementById("input").value.toLowerCase())) {
-          product.style.display = "block"
-          window.document.getElementById("roleta").style.transform = `translateX(0px)`
+input.addEventListener("input", function () {
+  const products = document.querySelectorAll(".products"); 
+  if (input.value != "") {
+    products.forEach((product) => {
+      if (product.id.toLowerCase().includes(input.value.toLowerCase())) {
+        product.style.display = "block";
+        roleta.style.transform = `translateX(0px)`;
+      } else {
+        product.style.display = "none";
       }
-      else {
-        product.style.display = "none"
-      }
-    })
+    });
+  } else {
+    seta_esquerda.style.display = "block";
+    seta_direita.style.display = "block";
+    products.forEach((product) => {
+      product.style.display = "block";
+    });
   }
-  else {
-    window.document.getElementById("seta-esquerda").style.display = "block"
-    window.document.getElementById("seta-direita").style.display = "block"
-    window.document.querySelectorAll(".products").forEach(product => {
-      product.style.display = "block"
-    })
-  }
-})
-window.document.getElementById("seletor-de-marcas").addEventListener("change", function() {
-  window.document.querySelectorAll(".products").forEach(product => {
+});
+
+var seletor = window.document.getElementById("seletor-de-marcas");
+seletor.addEventListener("change", function () {
+  const products = document.querySelectorAll(".products");
+  products.forEach((product) => {
     if (
-      (window.document.getElementById("input").value.toLowerCase() == "" &&
-        product.id
-          .toLowerCase()
-          .includes(
-            window.document
-              .getElementById("seletor-de-marcas")
-              .value.toLowerCase()
-          )) ||
-      (window.document.getElementById("input").value.toLowerCase() != "" &&
-        product.id
-          .toLowerCase()
-          .includes(
-            window.document
-              .getElementById("seletor-de-marcas")
-              .value.toLowerCase()
-          ) &&
-        product.id
-          .toLowerCase()
-          .includes(
-            window.document.getElementById("input").value.toLowerCase()
-          ))
+      (input.value.toLowerCase() == "" &&
+        product.id.toLowerCase().includes(seletor.value.toLowerCase())) ||
+      (input.value.toLowerCase() != "" &&
+        product.id.toLowerCase().includes(seletor.value.toLowerCase()) &&
+        product.id.toLowerCase().includes(input.value.toLowerCase()))
     ) {
       product.style.display = "block";
-      window.document.getElementById(
-        "roleta"
-      ).style.transform = `translateX(0px)`;
+      roleta.style.transform = `translateX(0px)`;
     } else {
       product.style.display = "none";
     }
-  })
-})
-window.document.getElementById("seta-direita").addEventListener("click", function() {
-  
-  n +=1
-    if (n > 0) {
-        window.document.getElementById("seta-esquerda").classList.add("opacidade")
-        window.document.getElementById("roleta").style.transform = `translateX(${n * -82.5}rem)`
+  });
+});
+
+seta_direita.addEventListener("click", function () {
+  n += 1;
+  if (n > 0) {
+    seta_esquerda.classList.add("opacidade");
+    roleta.style.transform = `translateX(${n * -82.5}rem)`;
+  } else {
+    roleta.style.transform += `translateX(0px)`;
+    seta_direita.classList.add("desabilitado");
+  }
+  console.log(n);
+});
+
+seta_esquerda.addEventListener("click", function () {
+  n -= 1;
+  if (n < 0) {
+    n = 0;
+  }
+  if (n < 1) {
+    seta_esquerda.classList.remove("opacidade");
+    roleta.style.transform = `translateX(0px)`;
+  } else {
+    if (n == 4) {
+      seta_direita.classList.remove("desabilitado");
     }
-    else{
-      window.document.getElementById("roleta").style.transform += `translateX(0px)`
-      window.document.getElementById("seta-direita").classList.add("desabilitado")
-    }
-    console.log(n)
-})
-window.document.getElementById("seta-esquerda").addEventListener("click", function() {
-    n -= 1
-    if(n < 0) {
-      n = 0
-    }
-    var rolet = window.document.getElementById("roleta")
-    if(n < 1) {
-        window.document.getElementById("seta-esquerda").classList.remove("opacidade")
-      window.document.getElementById("roleta").style.transform = `translateX(0px)`
-      }
-      else {
-         if (n == 4) {
-      window.document.getElementById("seta-direita").classList.remove("desabilitado")
-    }
-      window.document.getElementById("roleta").style.transform = `translateX(${n * -82.5}rem)`
-      }
-      console.log(n)
-      
-})
-var jazon = [
+    roleta.style.transform = `translateX(${n * -82.5}rem)`;
+  }
+  console.log(n);
+});
+
+const arquivo_json = [
   {
     marca: "Vonixx",
     nome: "V-MOL",
@@ -308,13 +294,18 @@ var jazon = [
       "https://images.tcdn.com.br/img/img_prod/1109830/melon_colors_rosa_500ml_easytech_shampoo_detergente_lava_autos_automotivo_neutro_concentrado_1_400_2277_1_b17171005402521d0615aa81e0e83d60.jpg",
   },
 ];
-jazon.forEach(produto => {
-    console.log(produto)
-    const roleta = window.document.getElementById("roleta")
-    const divs = window.document.createElement("div")
-    divs.classList.add("products")
-    divs.id = produto["nome"].toLowerCase() +" " + produto["tipo"].toLowerCase() + " " + produto["marca"].toLowerCase()
-    divs.innerHTML = ` <div class="produtos-cima" >
+
+arquivo_json.forEach((produto) => {
+  console.log(produto);
+  const divs = window.document.createElement("div");
+  divs.classList.add("products");
+  divs.id =
+    produto["nome"].toLowerCase() +
+    " " +
+    produto["tipo"].toLowerCase() +
+    " " +
+    produto["marca"].toLowerCase();
+  divs.innerHTML = ` <div class="produtos-cima" >
     <h1>${produto["nome"]}</h1>
     </div>
     <div class="produtos-meio">
@@ -333,5 +324,6 @@ jazon.forEach(produto => {
     </div>
     </div>
     `;
-    roleta.appendChild(divs)
-})
+  roleta.appendChild(divs);
+});
+  
