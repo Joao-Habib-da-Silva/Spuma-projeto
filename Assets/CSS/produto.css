@@ -219,3 +219,20 @@ select:hover {
     width: 200px;
     height: 200px;
 }
+@media(min-width:0px) and (max-width: 1450px) {
+    #seta-esquerda, #seta-direita {
+        display: none;
+    }
+    #roleta {
+        background-color: red;
+        display: grid;
+    }
+
+}
+@media (min-width:900px) and (max-width:1450px) {
+    #roleta {
+        background-color: blue;
+        grid-template-columns: repeat(2, 30rem);
+        padding-top: 70px;
+    }
+}

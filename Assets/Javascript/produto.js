@@ -45,9 +45,13 @@ seletor.addEventListener("change", function () {
 
 seta_direita.addEventListener("click", function () {
   n += 1;
+  let roletorgrau = 82.5
+  if (window.innerWidth < 1200) {
+    roletorgrau = 50
+  }
   if (n > 0) {
     seta_esquerda.classList.add("opacidade");
-    roleta.style.transform = `translateX(${n * -82.5}rem)`;
+    roleta.style.transform = `translateX(${n * -roletorgrau}rem)`;
   } else {
     roleta.style.transform += `translateX(0px)`;
     seta_direita.classList.add("desabilitado");
