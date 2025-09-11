@@ -215,8 +215,9 @@ header img {
 #menu-for-phones a {
     display: flex;
     align-items: center;
+    border-radius: 50%;
     justify-content: center;
-    width: 25%;
+    width: 20%;
     height: 100%;
     position: relative;
     font-size: 2rem;
@@ -234,6 +235,8 @@ header img {
 }
 #menu-for-phones i {
     color: var(--light);
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
 }
 #menu-for-phones a:active {
     background-color: var(--light);
@@ -254,7 +257,10 @@ header img {
     header.start i {
         display: none;
     }
-
+    header button {
+        scale: 0.8;
+        margin-right: -50px;
+    }
 
 }
 
@@ -263,6 +269,10 @@ header img {
         opacity: 1;
         bottom: 0;
     }
+    #login-botao {
+        display: flex;
+
+    }
     header.start nav {
         display: none;
     }
@@ -270,7 +280,7 @@ header img {
         display: none ;
     }
     header.start button {
-        display: none;
+        display: block;
     }
 }
 @media (max-width:350px) {
@@ -288,7 +298,9 @@ header img {
         margin-left: 50px;
     }
     header.start button {
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #menu-for-phones a {
         margin-left: 50px;

@@ -3,6 +3,7 @@
     display: flex;
     transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     justify-content: space-between;
+    overflow-y: hidden;
 }
 #login {
     width: 35%;
@@ -10,9 +11,9 @@
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius:30px ;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right:50px ;
+    padding-top: 4vw;
+    padding-left: 4vw;
+    padding-right:4vw ;
     background-color: var(--dark-light);
 }
 a {
@@ -41,6 +42,9 @@ input::placeholder {
 #parag-login {
     font-weight: 600;
     font-size: 1.5rem;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 #senhas {
     width: 22rem;
@@ -158,4 +162,73 @@ input::placeholder {
 #login-alternativas button:hover {
     scale: 1.1;
     background-color: var(--dark-light);
+}
+@media (min-width:0px) and (max-width:1224px) {
+    #volte {
+        display: none;
+    }
+    #modo-dark-and-light {
+        display: none;
+    }
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+    #login {
+        width: 90%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+@media(max-width:450px) {
+    #email, #senha-detalhes {
+        width: 22rem;
+    }
+}
+@media (min-width:401px) and (max-width: 449px) {
+    #email,#senha-detalhes {
+        width: 21rem;
+    }
+}
+@media (min-width:370px) and (max-width:400px) {
+    #email, #senha-detalhes {
+        width: 19rem;
+    }
+}
+@media (min-width: 451px)and (max-width:500px) {
+    #email {
+        margin-bottom: 50px;
+    }
+    
+    #email::placeholder {
+        font-size: 0.90rem;
+        padding-left: 2px;
+    }
+    #login {
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+    #senha-detalhes {
+        width: 19rem;
+    }
+    #login-baixo {
+        margin-top:  20px;
+    }
+}
+@media (min-width:370px) and (max-width: 400px) {
+}
+@media (min-width:0px) and (max-width:360px) {
+    #email, #senha-detalhes {
+        width: 18rem;
+    }
+}
+@media(max-width:320px) {
+    #email, #senha-detalhes {
+        width: 16rem;
+    }
+}
+@media(min-width:700px) and (max-width:1224px) {
+    #email, #senha-detalhes {
+        width: 40rem;
+    }
 }
