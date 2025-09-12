@@ -3,7 +3,7 @@ var input = window.document.getElementById("input");
 const roleta = window.document.getElementById("roleta");
 var seta_esquerda = window.document.getElementById("seta-esquerda");
 var seta_direita = window.document.getElementById("seta-direita");
-
+console.log(window.innerWidth)
 input.addEventListener("input", function () {
   const products = document.querySelectorAll(".products"); 
   if (input.value != "") {
@@ -27,6 +27,10 @@ input.addEventListener("input", function () {
 var seletor = window.document.getElementById("seletor-de-marcas");
 seletor.addEventListener("change", function () {
   const products = document.querySelectorAll(".products");
+  if(seletor.value == "todos") {
+    products.style.display = "block"
+  }
+  else {
   products.forEach((product) => {
     if (
       (input.value.toLowerCase() == "" &&
@@ -40,14 +44,17 @@ seletor.addEventListener("change", function () {
     } else {
       product.style.display = "none";
     }
-  });
+  });}
 });
 
 seta_direita.addEventListener("click", function () {
   n += 1;
   let roletorgrau = 82.5
-  if (window.innerWidth < 1200) {
-    roletorgrau = 50
+  if (window.innerWidth > 1400) {
+    roletorgrau = 103
+  }
+  else {
+    roletorgrau = 82.5
   }
   if (n > 0) {
     seta_esquerda.classList.add("opacidade");
