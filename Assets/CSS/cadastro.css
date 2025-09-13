@@ -1,1 +1,10 @@
 @import url(./global.css);
+#container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#cadastro {
+    background-color: red;
+    height: 100vh;
+}
