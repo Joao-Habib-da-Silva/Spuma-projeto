@@ -223,54 +223,65 @@ select:hover {
     #seta-esquerda, #seta-direita {
         display: none;
     }
+    #produtos {
+      width: 100%;
+    }
     #roleta {
         display: grid;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left:0 ;
+    }
+    .products {
+      margin-left: 0px;
+      place-self: center;
+      margin-right: 0px;
     }
 
+}
+@media(min-width:350px) and (max-width: 400px) {
+  .products {
+    scale: 1;
+    height: 70vh;
+    grid-template-columns: 100%;
+    grid-auto-rows: 70rem;
+  }
+  #roleta {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+@media(min-width:300px) and (max-width:330px) {
+  #roleta {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .products {
+    height: 100vh;
+    width: 60vh;
+  }
+    .produtos-comeco-direito button {
+    margin-right: 20px;
+  }
 }
 @media (min-width:1240px) and (max-width:1400px) {
     #roleta {
         grid-template-columns: repeat(2, 40rem);
-        padding-top: 70px;
         gap: 50px;
         grid-auto-rows: 40rem;
-        background-color: green;
-        padding-left: 50px;
     }
     .products {
         scale: 0.9;
     }
-    #seta-esquerda {
-        display: none;
-    }
-}
-@media (min-width: 0px) and (max-width: 1450px) {
-  #seta-esquerda, 
-  #seta-direita {
-    display: none;
-  }
-
-  #roleta {
-    display: grid;
-  }
 }
 
 @media (min-width: 1240px) and (max-width: 1400px) {
   #roleta {
     grid-template-columns: repeat(2, 40rem);
     grid-auto-rows: 40rem;
-    gap: 50px;
-    padding-top: 70px;
-    padding-left: 50px;
-    background-color: green;
-  }
+  } 
 
   .products {
     scale: 0.9;
-  }
-
-  #seta-esquerda {
-    display: none;
   }
 }
 
@@ -278,8 +289,6 @@ select:hover {
   #roleta {
     grid-template-columns: repeat(2, 35rem);
     grid-auto-rows: 45rem;
-    padding-left: 20px;
-    background-color: purple;
   }
 }
 
@@ -287,26 +296,22 @@ select:hover {
   #roleta {
     grid-template-columns: repeat(2, 34rem);
     grid-auto-rows: 40rem;
-    padding-left: 150px;
-    background-color: cadetblue;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1100px) {
   #roleta {
-    grid-template-columns: repeat(1, 33rem); 
+    grid-template-columns: repeat(1, 100vw); 
     grid-auto-rows: 40rem;
-    padding-left: 300px;
-    background-color: red;
   }
 }
 
 @media (min-width: 800px) and (max-width: 899px) {
   #roleta {
-    grid-template-columns: repeat(1, 33rem);
+    grid-template-columns: repeat(1, 100%);
     grid-auto-rows: 40rem;
     gap: 10px;
-    padding-left: 50px;
+    background-color: red;
   }
 }
 
@@ -314,22 +319,15 @@ select:hover {
   #roleta {
     grid-template-columns: 30rem;
     grid-auto-rows: 40rem;
-    padding-left: 70px;
-    background-color: aliceblue;
   }
 }
 
 @media (min-width: 400px) and (max-width: 649px) {
   #roleta {
     grid-auto-rows: 35rem;
-    gap: 0;
-    padding-left: 50px;
-    background-color: green;
   }
 
   .products {
     scale: 0.9;
-    margin-left: 5vw;
-    transform: translateX(-6vw);
 }
 }

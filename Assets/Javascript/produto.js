@@ -28,7 +28,9 @@ var seletor = window.document.getElementById("seletor-de-marcas");
 seletor.addEventListener("change", function () {
   const products = document.querySelectorAll(".products");
   if(seletor.value == "todos") {
-    products.style.display = "block"
+    products.forEach((product) => {
+      product.style.display = "block"
+    })
   }
   else {
   products.forEach((product) => {
@@ -50,12 +52,6 @@ seletor.addEventListener("change", function () {
 seta_direita.addEventListener("click", function () {
   n += 1;
   let roletorgrau = 82.5
-  if (window.innerWidth > 1400) {
-    roletorgrau = 103
-  }
-  else {
-    roletorgrau = 82.5
-  }
   if (n > 0) {
     seta_esquerda.classList.add("opacidade");
     roleta.style.transform = `translateX(${n * -roletorgrau}rem)`;
