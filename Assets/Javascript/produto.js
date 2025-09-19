@@ -52,6 +52,9 @@ seletor.addEventListener("change", function () {
 seta_direita.addEventListener("click", function () {
   n += 1;
   let roletorgrau = 82.5
+  if(window.innerWidth > 1600) {
+    roletorgrau= 69.5
+  }
   if (n > 0) {
     seta_esquerda.classList.add("opacidade");
     roleta.style.transform = `translateX(${n * -roletorgrau}rem)`;
@@ -303,7 +306,6 @@ const arquivo_json = [
 ];
 
 arquivo_json.forEach((produto) => {
-  console.log(produto);
   const divs = window.document.createElement("div");
   divs.classList.add("products");
   divs.id =

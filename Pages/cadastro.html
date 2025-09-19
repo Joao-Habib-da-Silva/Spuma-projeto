@@ -5,16 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spuma Website - Cadastro</title>
     <link rel="stylesheet" href="../Assets/CSS/cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div id="container">
         <button onclick="window.history.back()" id="volte"><</button>
         <div id="cadastro">
-            <input type="text">
-            <input type="password">
-            <input type="checkbox"><label >Eu concordo com as <a>Políticas de privacidade</a></label>
-            <input type="checkbox"><label>Eu concordo com os <a href="">Termos de uso</a></label>
-            <a href="">Já possuí uma conta?</a>
+            <p>Email:</p>
+            <input type="text" id="email">
+            <br>
+            <p>Senha:</p>
+            <div class="senha-detalhes">
+                  <input type="password" placeholder="Senha123." name="senha" class="senhas">
+            <button class="show-and-hide">
+                <i class='bx bx-hide abrir-fechar'></i>
+            </button>
+            </div>
+            <p>Confirme sua senha:</p>
+            <div class="senha-detalhes">
+                  <input type="password" placeholder="Senha123." name="senha" class="senhas">
+            <button class="show-and-hide">
+                <i class='bx bx-hide abrir-fechar'></i>
+            </button>
+            </div>
+            <p>Idade</p>
+            <input type="date" name="" id="idade">
+            <br>
+            <div class="linha">
+                <input type="checkbox" class="check"><p>Eu concordo com as <button id="politicas">Políticas de privacidade</button></p>
+            </div>
+            <br>
+            <div class="linha">
+                <input type="checkbox" class="check"><p>Eu concordo com os <button id="termos">Termos de uso</button></p>
+            </div>
+            <div id="login-baixo">
+                
+            
+            <p>Já tem uma conta? <a href="cadastro.html">Login</a></p>
+            <button value="Enviar" id="button-enviar">Enviar</button>
+            <br>
+                <div id="login-alternativas">
+                    <button>
+                        <i class='bx bxl-google'></i>  
+                    </button>
+                    <button>
+                        <i class='bx bxl-microsoft'></i>
+                    </button>
+                    <button>
+                        <i class='bx bxl-facebook'></i>
+                    </button>
+                    <button>
+                        <i class='bx bxl-twitter'></i>
+                    </button>
+                </div>
+            </div>
         </div>
         
         <div id="modo-dark-and-light">
