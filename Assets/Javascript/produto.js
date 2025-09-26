@@ -53,7 +53,7 @@ seta_direita.addEventListener("click", function () {
   n += 1;
   let roletorgrau = 82.5
   if(window.innerWidth > 1600) {
-    roletorgrau= 69.5
+    roletorgrau= 66
   }
   if (n > 0) {
     seta_esquerda.classList.add("opacidade");
