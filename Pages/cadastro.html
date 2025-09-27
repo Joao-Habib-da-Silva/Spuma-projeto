@@ -19,14 +19,14 @@
             <br>
             <p>Senha:</p>
             <div class="senha-detalhes">
-                  <input type="password" placeholder="Senha123." name="senha" class="senhas">
+                  <input type="password" placeholder="Senha123." name="senha" class="senhas" id="senha1">
             <button class="show-and-hide">
                 <i class='bx bx-hide abrir-fechar'></i>
             </button>
             </div>
             <p>Confirme sua senha:</p>
             <div class="senha-detalhes">
-                  <input type="password" placeholder="Senha123." name="senha" class="senhas">
+                  <input type="password" placeholder="Senha123." name="senha" class="senhas" id="senha2">
             <button class="show-and-hide">
                 <i class='bx bx-hide abrir-fechar'></i>
             </button>
@@ -34,12 +34,13 @@
             <p>Idade</p>
             <input type="date" name="" id="idade">
             <br>
+            <div id="aviso"></div>
             <div class="linha">
-                <input type="checkbox" class="check"><p>Eu concordo com as <button id="politicas">Políticas de privacidade</button></p>
+                <input type="checkbox" class="check" id="check-politicas"><p>Eu concordo com as <button id="politicas">Políticas de privacidade</button></p>
             </div>
             <br>
             <div class="linha">
-                <input type="checkbox" class="check"><p>Eu concordo com os <button id="termos">Termos de uso</button></p>
+                <input type="checkbox" class="check" id="check-termos"><p>Eu concordo com os <button id="termos">Termos de uso</button></p>
             </div>
             <div id="login-baixo">
                 
@@ -78,6 +79,11 @@
         <a href=""><i class='bx  bx-phone'></i></a> 
         </nav>
     </div>
+      <script src="https://www.gstatic.com/firebasejs/11.30.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.30.0/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/11.30.0/firebase-firestore.js"></script>
+
+    <script src="../Assets/Javascript/cadastro-banco.js"></script>
     <script type="module" src="../Assets/Javascript/cadastro.js"></script>
 </body>
 </html>

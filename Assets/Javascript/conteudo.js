@@ -36,33 +36,30 @@ O SPUMA não se responsabiliza por nenhuma perda de oportunidade ou prejuizos qu
 <br>
 <h1>5. DA LICENÇA DE USO E CÓPIA</h1>
 <br>
-O visitante poderá acessar todo o conteúdo do website, como artigos, vídeos, imagens, produtos e serviços, não significando nenhum tipo de cessão de direito ou permissão de uso, ou de cópia dos mesmo.
-Todos os direitos são preservados, conforme a legislação brasileira, principalmente na Lei de Direitos Autorais (regulamentada na Lei nº 9.610/18), assim como no Código Civil brasileiro (regulamentada na Lei nº 10.406/02), ou quaisquer outras legislações aplicáveis.
-Todo o conteúdo do site é protegido por direitos autorais, e seu uso, cópia, transmissão, venda, cessão ou revenda, deve seguir a lei brasileira, tendo a EMPRESA todos os seus direitos reservados, e não permitindo a cópia ou utilização de nenhuma forma e meio, sem autorização expressa e por escrita da mesma.
-A EMPRESA poderá em casos concretos permitir pontualmente exceções a este direito, que serão claramente destacados no mesmo, com a forma e permissão de uso do conteúdo protegido. Este direito é revogável e limitado as especificações de cada caso.
+O visitante poderá acessar todo o conteúdo do website, como preços, informações do projeto, midias, não significando nenhum tipo de cessão de direito ou permissão de uso, ou de cópia dos mesmos.
+Todos os direitos são preservados, conforme a legislação brasileira, principalmente na Lei de Direitos Autorais (regulamentada na Lei n° 9.610/18), assim como no Código Civil brasileiro (regulamentada na Lei n° 10.406/02), ou quaisquer outras legislações aplicáveis.
+Todo conteúdo do site é protegido por direitos autorais, e seu uso, cópia, transmissão, direitos reservados, e não permitindo a cópia ou utilização de nenhuma forma e meio, sem autorização expressa e por escrita da mesma.
+O SPUMA poderá em casos concretos permitir pontualmente exceções a este direito, que serão claramente destacados no mesmo, com a forma e permissão de uso do conteúdo protegido. Este direito é revogável e limitado as especificações de cada caso.
 <br>
 <h1>6. DAS OBRIGAÇÕES</h1>
 <br>
-O VISITANTE ao utilizar o website da EMPRESA, concorda integralmente em:
-De nenhuma forma ou meio realizar qualquer tipo de ação que tente invadir, hacker, destruir ou prejudicar a estrutura do site, plataforma da EMPRESA ou de seus parceiros comerciais. Incluindo-se, mas não se limitando, ao envio de vírus de computador, de ataques de DDOS, de acesso indevido por falhas da mesma ou quaisquer outras forma e meio.
+O visitante ao utilizar o website do SPUMA, concorda integralmente em:
+De nenhuma forma ou meio realizar qualquer tipo de ação que tente invadir, hackear, destruir ou prejudicar a estrutura do sit , plataforma do SPUMA ou de seus parceiros comerciais.
+Incluindo-sem, mas não se limitando, ao envio de vírus de computador, de ataques de DDOS, de acesso indevido por falhas da mesma ou quaisuqer outras formas e meios.
 De não realizar divulgação indevida nos comentários do site de conteúdo de SPAM, empresas concorrentes, vírus, conteúdo que não possua direitos autorais ou quaisquer outros que não seja pertinente a discussão daquele texto, vídeo ou imagem.
 Da proibição em reproduzir qualquer conteúdo do site ou plataforma sem autorização expressa, podendo responder civil e criminalmente pelo mesmo.
-Com a Política de Privacidade do site, assim como tratamos os dados referentes ao cadastro e visita no site, podendo a qualquer momento e forma, requerer a exclusão dos mesmos, através do formulário de contato.
+Com a Política de privacidade do site, assim como tratamos os dados referentes ao cadastro e visita no site, podendo a qualquer momento e forma, requerer a exclusão dos mesmos, através do formulário do contato.
 <br>
 <h1> 7. DA MONETIZAÇÃO E PUBLICIDADE</h1>
 <br>
-A EMPRESA pode alugar ou vender espaços publicitários na plataforma, ou no site, diretamente aos anunciantes, ou através de empresas especializadas com o Adsense (Google), Taboola ou outras plataformas especializadas como o Eletro Criticas
-Essas publicidades não significam nenhuma forma de endosso ou responsabilidade pelos mesmos, ficando o VISITANTE responsável pelas compras, visitas, acessos ou quaisquer ações referentes as estas empresas.
-Todas as propagandas no site ou plataforma serão claramente destacadas como publicidade, como forma de disclaimer da EMPRESA e de conhecimento do VISITANTE.
-Em casos de compra de produtos ou serviços, será possível a devolução em até 07 (sete) dias, conforme o Código de Defesa do Consumidor.
-Estes anúncios podem ser selecionados pela empresa de publicidade automaticamente, conforme as visitas recentes do VISITANTE, assim como baseado no seu histórico de busca, conforme as políticas de acesso da plataforma.
+O SPUMA recebe monetização através dos serviços distribuidos ao usuários da plataforma, a aqueles que desejam trabalhar nela.
 <br>
 8. DOS TERMOS GERAIS
 <br>
-O Site irá apresentar hiperlinks durante toda a sua navegação, que podem levar diretamente para outra página da EMPRESA ou para sites externos.
-Apesar da EMPRESA apenas criar links para sites externos de extrema confiança, caso o usuário acesse um site externo, a EMPRESA não tem nenhuma responsabilidade pelo meio, sendo uma mera indicação de complementação de conteúdo, ficando o mesmo responsável pelo acesso, assim como sobre quaisquer ações que venham a realizar neste site.
-Em caso que ocorra eventuais conflitos judiciais entre o VISITANTE e a EMPRESA, o foro elegido para a devida ação será o da comarca da Empresa, mesmo que haja outro mais privilegiado.
-Este Termo de uso é valido a partir de 14 de setembro de 2021.
+O site irá apresentar hiperlinks durante toda a sua navegação, que podem levar diretamente para outra página do SPUMA ou para sites externos.
+Apesar do SPUMA apenas criar links para sites externos de extrema confiança, caso o usuário acesse um site externo, o SPUMA não tem nenhuma responsabilidade pelo meio, sendo uma mera indicação de complementação de conteúdo, ficando o mesmo responsável pelo acessom assim como sobre quaisquer ações que venham a realizar neste site.
+Em caso que ocorrra eventuais conflitos judiciais entre o cliente e o SPUMA, o foro elegido para a devida ação será o da comarca da empresa, mesmo que haja outro mais privilegiado.
+Este termo de uso é valido a partir de 26 de setembro de 2025.
 `;
 export const privacidade = `❗ AVISOS ❗
 <br>
@@ -232,3 +229,235 @@ SEÇÃO 10 – JURISDIÇÃO PARA RESOLUÇÃO DE CONFLITOS
 Para a solução de controvérsias decorrentes do presente instrumento será aplicado integralmente o Direito brasileiro.
 
 Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede da empresa.`;
+
+export const arquivo_json = [
+  {
+    marca: "Vonixx",
+    nome: "V-MOL",
+    tipo: "Lava Autos",
+    descricao:
+      "Lava autos biodegradável, pH levemente básico, ideal para remoção de barro e óleo sem agredir a superfície.",
+    estoque: 0,
+    imagem:
+      "https://a-static.mlcdn.com.br/1500x1500/v-mol-l-shampoo-desengraxante-neutro-automotivo-lava-autos-detergente-vonixx/loja-yamase/vmol5l/7e2e1c6b86eb00e78d099acda5f99719.jpeg",
+  },
+  {
+    marca: "Vonixx",
+    nome: "V-FLOC",
+    tipo: "Lava Autos",
+    descricao:
+      "Lava autos de alta performance, pH neutro, indicado para lavagem suave e eficiente sem remover ceras.",
+    estoque: 0,
+    imagem:
+      "https://casadosoldador.com.br/files/products_images/40420/lava-autos-shampoo-v-floc-1-5l-vonixx-casa-do-soldador-01%20(1).webp?1750968706",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Impact",
+    tipo: "Limpador Universal",
+    descricao:
+      "Produto ecológico e não corrosivo para remover insetos, gordura e encardidos de superfícies diversas.",
+    estoque: 0,
+    imagem:
+      "https://static.machadoautoparts.com.br/public/machadoautoparts/imagens/produtos/impact-limpeza-pesada-1-5l-vonixx-67c1e354a0e4b.jpg",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Izer",
+    tipo: "Descontaminante Ferroso",
+    descricao:
+      "Remove resíduos de ferro e partículas metálicas com eficiência e segurança, preparando a superfície.",
+    estoque: 0,
+    imagem:
+      "https://cdn.awsli.com.br/600x450/1373/1373016/produto/106668764/b447cda747.jpg",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Strike",
+    tipo: "Removedor",
+    descricao:
+      "Remove piche, cola de adesivos, etiquetas e ferrugem, com alto rendimento.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/strike_643_1_0247f7240e42b81a9b2c51dc1f44d27a.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Vertex",
+    tipo: "Limpeza de Estofados",
+    descricao:
+      "Limpeza profunda de estofados automotivos e residenciais em uma única etapa.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1034705/limpador_de_estofados_vertex_limpeza_profunda_vonixx_1529_2_ff02545cf4a6f5dc0aa190cd954bfc1f.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Blend",
+    tipo: "Cera Híbrida",
+    descricao:
+      "Cera spray de SiO2 e carnaúba, protege até 4 meses, promove brilho e hidrorrepelência.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/blend_all_in_one_511_1_76f6996d57f9f61009def63bb002e049.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Sinergy Wheel",
+    tipo: "Coating para Rodas",
+    descricao:
+      "Spray coating que protege rodas por até 6 meses, resistente a altas temperaturas.",
+    estoque: 0,
+    imagem:
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lopi827f6zlef9",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Prizm",
+    tipo: "Limpeza de Vidros",
+    descricao:
+      "Restaura transparência de vidros, remove marcas de água e impurezas incrustadas.",
+    estoque: 0,
+    imagem:
+      "https://cdn.awsli.com.br/2500x2500/1771/1771500/produto/22632578105ced7945b.jpg",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Verniz de Motor",
+    tipo: "Proteção de Motor",
+    descricao:
+      "Protege, dá brilho e renova superfícies do motor: plásticas, metálicas, pintadas e borrachas.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/verniz_de_motor_671_1_b7af572ab71aec372004dc0b46985601.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Intense",
+    tipo: "Renovador de Plásticos",
+    descricao:
+      "Renova plásticos com proteção UV, acabamento natural e toque seco, durando até 6 meses.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/intense_599_1_c6614f7928e26ac8cfef586633c51891.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Glazy",
+    tipo: "Limpa Vidros",
+    descricao:
+      "Produto multifuncional para limpeza de vidros, reduz atrito e risco de riscos.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/glazy_1025_1_a3504ab822b18151bf687f68a3c50665.png",
+  },
+  {
+    marca: "Vonixx",
+    nome: "Delet",
+    tipo: "Limpeza de Pneus",
+    descricao:
+      "Limpador de alta performance para pneus e borrachas, devolvendo a cor original.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1060217/delet_897_1_4ec24dfdf6bb7557b7981e1a8af97c22.png",
+  },
+  {
+    marca: "Vintex",
+    nome: "Alumax",
+    tipo: "Desincrustante Ácido",
+    descricao:
+      "Limpeza de rodas, chassis, motores, baús de alumínio, inox e madeira.",
+    estoque: 0,
+    imagem:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYbrquBVvNtmCDwQE7GATewoA3YwEC6_rmw&s",
+  },
+  {
+    marca: "Vintex",
+    nome: "Darker",
+    tipo: "Renovador de Pneus",
+    descricao:
+      "Renova pneus e borrachas, formando filme preto resistente e de alta durabilidade.",
+    estoque: 0,
+    imagem:
+      "https://vintex.com.br/wp-content/uploads/2024/06/DARKER-15L-NOVA-TAMPA-e1721329267664.png",
+  },
+  {
+    marca: "Protelim",
+    nome: "Revitax",
+    tipo: "Revitalizador de Plásticos",
+    descricao:
+      "Revitaliza e protege plásticos internos e externos com SiO2 e proteção UV.",
+    estoque: 0,
+    imagem:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGbkvitG82fCgpzEntLb_IiF483_j2VVwOw&s",
+  },
+  {
+    marca: "Protelim",
+    nome: "Multi 200",
+    tipo: "Desengraxante Multiuso",
+    descricao:
+      "Desengraxante alcalino biodegradável, concentrado e de alto rendimento.",
+    estoque: 0,
+    imagem:
+      "https://protelim.com.br/wp-content/uploads/2021/09/mult-200-5l-ok.jpg",
+  },
+  {
+    marca: "Protelim",
+    nome: "Power Tire",
+    tipo: "Selante de Pneus",
+    descricao:
+      "Selante de longa duração que mantém o brilho e a hidrorrepelência por semanas.",
+    estoque: 0,
+    imagem:
+      "https://protelim.com.br/wp-content/uploads/2021/09/power-tire-novo.jpg",
+  },
+  {
+    marca: "Easytech",
+    nome: "Couro Quick Detailer",
+    tipo: "Cuidado de Couro",
+    descricao:
+      "Limpa e hidrata superfícies de couro em uma única etapa, mantendo a textura e prolongando a durabilidade.",
+    estoque: 0,
+    imagem:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2awODZKetd8g77_0aGoSUy4jjt76yR2W5g&s",
+  },
+  {
+    marca: "Easytech",
+    nome: "Plurimol",
+    tipo: "Shampoo Automotivo",
+    descricao:
+      "Shampoo concentrado para lavagem pesada de veículos, remove sujeira, graxa e resíduos sem danificar a pintura.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1109830/plurimol_shampoo_automotivo_lavagem_pesada_desengraxante_concentrado_1_5l_easytech_2287_1_1784a6e8257a8dbf220325f54a430f15.jpg",
+  },
+  {
+    marca: "Easytech",
+    nome: "Insignia Rain",
+    tipo: "Tratamento de Vidros",
+    descricao:
+      "Vitrificador que cria efeito repelente à água e chuva no para-brisa, melhorando visibilidade e segurança.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1109830/90_insignia_rain_easytech_vitrificador_de_vidros_parabrisa_cristalizador_repelente_de_agua_e_chuva_para_2185_2_262586b999da80c81df38001c9003f0c.jpg",
+  },
+  {
+    marca: "Easytech",
+    nome: "Melon Colors",
+    tipo: "Shampoo Automotivo",
+    descricao:
+      "Shampoo neutro concentrado para lavagem de carros, com alta diluição, mantendo brilho e proteção da pintura.",
+    estoque: 0,
+    imagem:
+      "https://images.tcdn.com.br/img/img_prod/1109830/melon_colors_rosa_500ml_easytech_shampoo_detergente_lava_autos_automotivo_neutro_concentrado_1_400_2277_1_b17171005402521d0615aa81e0e83d60.jpg",
+  },
+];
+export const firebaseConfig = {
+  apiKey: "AIzaSyCH7lpKD9aMWorbk_pk3mxlcGXt21GM6lM",
+  authDomain: "spuma-banco.firebaseapp.com",
+  projectId: "spuma-banco",
+  storageBucket: "spuma-banco.firebasestorage.app",
+  messagingSenderId: "447336546434",
+  appId: "1:447336546434:web:23802d28de45fbedc2349b",
+  measurementId: "G-4BJ95WYKF5",
+};
