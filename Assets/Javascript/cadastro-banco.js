@@ -13,10 +13,7 @@ const auth = firebase.auth();
 const db = firebase.firestore();
 
 const cadastroligar = document.getElementById("button-enviar");
-const aviso = document.getElementById("aviso");
-
 cadastroligar.addEventListener("click", async function () {
-  aviso.style.display = "none";
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha1").value;
   const data = document.getElementById("idade").value;
@@ -34,10 +31,7 @@ cadastroligar.addEventListener("click", async function () {
       criadoEm: new Date(),
     });
 
-    aviso.style.display = "flex";
-    aviso.innerHTML = "Cadastro realizado com sucesso!";
   } catch (error) {
-    aviso.style.display = "flex";
-    aviso.innerHTML = "Erro: " + error.message;
+    console.error("erro")
   }
 });
