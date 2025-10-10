@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-console.log("ola")
 const firebaseConfig = {
   apiKey: "AIzaSyCH7lpKD9aMWorbk_pk3mxlcGXt21GM6lM",
   authDomain: "spuma-banco.firebaseapp.com",
@@ -19,9 +18,17 @@ cadastroligar.addEventListener("click", async function () {
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha1").value;
   const data = document.getElementById("idade").value;
+  const cep = window.document.getElementById("cep").value;
+  const rua = window.document.getElementById("rua").value;
+  const bairro = window.document.getElementById("bairro").value;
+  const cidade = window.document.getElementById("cidade").value;
+  const estado = window.document.getElementById("estado").value;
+  const check_politicas = window.document.getElementById("check-politicas")
+  const check_diretrizes = window.document.getElementById("check-termos")
   const aviso = window.document.getElementById("aviso")
-  if (!email || !senha || !data) {
-    aviso.innerHTML = "Preencha todos os campos"
+  if (!email || !senha || !data || !cep || !rua || !bairro || !cidade || !estado || !check_politicas.checked || !check_diretrizes.checked) {
+    aviso.style.display = "block"
+    aviso.innerHTML = "<h1>Preencha todos os campos</h1>"
     return;
   }
   try {
@@ -32,11 +39,15 @@ cadastroligar.addEventListener("click", async function () {
       email: user.email,
       nascimento: data,
       criadoEm: new Date(),
+      cep: cep,
+      rua: rua,
+      bairro: bairro,
+      cidade: cidade,
+      estado: estado,
     });
-
-    aviso.innerHTML = "Cadastrado com sucesso"
+    aviso.style.display = "block"
+    aviso.innerHTML = "<h1>Cadastrado com sucesso</h1>"
   } catch (error) {
     console.error("Erro ao cadastrar:", error.message);
-    alert("Erro ao cadastrar: " + error.message);
   }
 });

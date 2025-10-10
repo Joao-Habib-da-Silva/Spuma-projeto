@@ -7,6 +7,27 @@ const html = window.document.documentElement
 const button_politica = window.document.getElementById("politicas")
 const button_termos = window.document.getElementById("termos")
 const explicacao = window.document.getElementById("explicacao")
+const cep = window.document.getElementById("cep")
+const rua = window.document.getElementById("rua")
+const cidade = window.document.getElementById("cidade")
+const estado = window.document.getElementById("estado")
+const bairro = window.document.getElementById("bairro")
+cep.addEventListener("input", async function() {
+    try {
+        const api = await fetch(`https://viacep.com.br/ws/${cep.value}/json`)
+        if(!api.ok) {
+            throw new Error(error)
+        }else {
+            const data = await api.json()
+            cidade.value = `${data["localidade"]}`
+            estado.value = `${data["estado"]}`
+            bairro.value = `${data["bairro"]}`
+            rua.value = `${data["logradouro"]}`
+        }
+    }catch(error) {
+      console.error(error)  
+    }
+})
 button_politica.addEventListener("click", function() {
     explicacao.classList.add("ligado")
     explicacao.innerHTML = `${privacidade}`

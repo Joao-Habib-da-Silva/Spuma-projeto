@@ -145,6 +145,10 @@ input::placeholder {
     overflow-y: auto;
     font-family: "Roboto";
 }
+#enderecos input{
+    width: 40%;
+    margin-right: 20px;
+}
 #explicacao.ligado {
     display: block;
 }
@@ -187,8 +191,12 @@ input[type="checkbox"]:checked {
         width: 90%;
 }
 #aviso {
-    display: none;
+    display: flex;
     width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    color: var(--light);
+    font-size: 0.75rem;
     height: 08%;
 }
 #modo-dark-and-light {
