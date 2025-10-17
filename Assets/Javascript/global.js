@@ -1,4 +1,16 @@
-import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import {onAuthStateChanged, getAuth} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"
+const firebaseConfig = {
+  apiKey: "AIzaSyCH7lpKD9aMWorbk_pk3mxlcGXt21GM6lM",
+  authDomain: "spuma-banco.firebaseapp.com",
+  projectId: "spuma-banco",
+  storageBucket: "spuma-banco.appspot.com",
+  messagingSenderId: "447336546434",
+  appId: "1:447336546434:web:23802d28de45fbedc2349b",
+  measurementId: "G-4BJ95WYKF5",
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const select_mode = window.document.getElementById("modo-dark-and-light");
 const select_mode_bolinha = window.document.getElementById("bolinha");
 const html = window.document.documentElement;
