@@ -1,3 +1,4 @@
+import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"
 const select_mode = window.document.getElementById("modo-dark-and-light");
 const select_mode_bolinha = window.document.getElementById("bolinha");
 const html = window.document.documentElement;
@@ -24,3 +25,11 @@ select_mode.addEventListener("click", function () {
       html.classList.add("ativado");
     }
   });
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log("cadastro fi")
+  }
+  else {
+    console.log("nao cadastrado fi")
+  }
+})
