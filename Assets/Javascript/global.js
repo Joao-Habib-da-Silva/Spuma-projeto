@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 const select_mode = window.document.getElementById("modo-dark-and-light");
 const select_mode_bolinha = window.document.getElementById("bolinha");
 const html = window.document.documentElement;
@@ -35,12 +35,17 @@ const firebaseConfig = {
   appId: "1:447336546434:web:23802d28de45fbedc2349b",
   measurementId: "G-4BJ95WYKF5",
 };
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-onAuthStateChanged(auth, (user) => {
+
+function onUserStateChanged(callback) {
+  onAuthStateChanged(auth, callback);
+}
+onUserStateChanged(user => {
   if (user) {
     console.log("Usuário logado:", user.email);
   } else {
     console.log("Usuário não está logado");
   }
-});
+})
