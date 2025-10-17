@@ -1,16 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import {onAuthStateChanged, getAuth} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"
-const firebaseConfig = {
-  apiKey: "AIzaSyCH7lpKD9aMWorbk_pk3mxlcGXt21GM6lM",
-  authDomain: "spuma-banco.firebaseapp.com",
-  projectId: "spuma-banco",
-  storageBucket: "spuma-banco.appspot.com",
-  messagingSenderId: "447336546434",
-  appId: "1:447336546434:web:23802d28de45fbedc2349b",
-  measurementId: "G-4BJ95WYKF5",
-};
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 const select_mode = window.document.getElementById("modo-dark-and-light");
 const select_mode_bolinha = window.document.getElementById("bolinha");
 const html = window.document.documentElement;
@@ -37,11 +26,21 @@ select_mode.addEventListener("click", function () {
       html.classList.add("ativado");
     }
   });
+const firebaseConfig = {
+  apiKey: "AIzaSyCH7lpKD9aMWorbk_pk3mxlcGXt21GM6lM",
+  authDomain: "spuma-banco.firebaseapp.com",
+  projectId: "spuma-banco",
+  storageBucket: "spuma-banco.appspot.com",
+  messagingSenderId: "447336546434",
+  appId: "1:447336546434:web:23802d28de45fbedc2349b",
+  measurementId: "G-4BJ95WYKF5",
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    console.log("cadastro fi")
+    console.log("Usuário logado:", user.email);
+  } else {
+    console.log("Usuário não está logado");
   }
-  else {
-    console.log("nao cadastrado fi")
-  }
-})
+});
