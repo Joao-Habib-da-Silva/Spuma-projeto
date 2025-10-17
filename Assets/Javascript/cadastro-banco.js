@@ -19,6 +19,7 @@ cadastroligar.addEventListener("click", async function () {
   const senha = document.getElementById("senha1").value;
   const data = document.getElementById("idade").value;
   const cep = window.document.getElementById("cep").value;
+  const telefone = window.document.getElementById("telefone").value
   const rua = window.document.getElementById("rua").value;
   const bairro = window.document.getElementById("bairro").value;
   const cidade = window.document.getElementById("cidade").value;
@@ -26,7 +27,7 @@ cadastroligar.addEventListener("click", async function () {
   const check_politicas = window.document.getElementById("check-politicas")
   const check_diretrizes = window.document.getElementById("check-termos")
   const aviso = window.document.getElementById("aviso")
-  if (!email || !senha || !data || !cep || !rua || !bairro || !cidade || !estado || !check_politicas.checked || !check_diretrizes.checked) {
+  if (!email || !senha || !data || !cep || !rua || !bairro || !cidade || !estado || !telefone || !check_politicas.checked || !check_diretrizes.checked) {
     aviso.style.display = "block"
     aviso.innerHTML = "<h1>Preencha todos os campos</h1>"
     return;
@@ -38,6 +39,7 @@ cadastroligar.addEventListener("click", async function () {
     await setDoc(doc(db, "users", user.uid), {
       email: user.email,
       nascimento: data,
+      telefone: telefone,
       criadoEm: new Date(),
       cep: cep,
       rua: rua,
