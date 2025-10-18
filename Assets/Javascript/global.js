@@ -47,7 +47,9 @@ onUserStateChanged(user => {
   if (user) {
     buttonlogin.style.display = "none"
     use.style.display = "flex"
+    console.log("login feito")
   } else {
+    console.log("login não feito")
   buttonlogin.style.display = "flex";
   use.style.display = "none";
   }
