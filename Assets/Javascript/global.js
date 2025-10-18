@@ -45,9 +45,10 @@ function onUserStateChanged(callback) {
 }
 onUserStateChanged(user => {
   if (user) {
-    buttonlogin.style.display = none
-    use.style.display = flex
+    buttonlogin.style.display = "none"
+    use.style.display = "flex"
   } else {
-    console.log("Usuário não está logado");
+  buttonlogin.style.display = "flex";
+  use.style.display = "none";
   }
 })
