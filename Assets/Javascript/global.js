@@ -38,13 +38,15 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
+const buttonlogin = window.document.getElementById("login-botao")
+const use =window.document.getElementById("user")
 function onUserStateChanged(callback) {
   onAuthStateChanged(auth, callback);
 }
 onUserStateChanged(user => {
   if (user) {
-    console.log("Usuário logado:", user.email);
+    buttonlogin.style.display = none
+    use.style.display = flex
   } else {
     console.log("Usuário não está logado");
   }

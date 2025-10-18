@@ -49,6 +49,7 @@ cadastroligar.addEventListener("click", async function () {
     });
     aviso.style.display = "block"
     aviso.innerHTML = "<h1>Cadastrado com sucesso</h1>"
+    history.back()
   } catch (error) {
     console.error("Erro ao cadastrar:", error.message);
   }
